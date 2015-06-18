@@ -964,7 +964,7 @@ function abi_entry_meta(){
 // START
 function abi_add_container_before_event(){
 	if( !is_admin() ){
-		echo '<div class="events-main-date" style=">';
+		echo '<div class="events-main-date">';
 		
 		$abi_date = explode(" ", tribe_get_start_date( null, false, 'M j' ) );
 		echo '<p>' . $abi_date[0] . '<span>' . $abi_date[1] . '</span></p>';
