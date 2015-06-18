@@ -943,6 +943,14 @@ form#group-settings-form input[type="checkbox"] {
 .announcements #buddypress .buddyboss_privacy_filter {
     display: none;
 }
+
+/* Added by DN */
+.tribe-events-before-html {
+  margin: auto;
+  width: 650px;
+}
+
+
 /*--------------------------------------------------------------
 2.0 - Responsive media queries (mobile styles)
 --------------------------------------------------------------*/
