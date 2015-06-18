@@ -962,19 +962,31 @@ function abi_entry_meta(){
 
 /* Edit Event List view */
 // START
-// function abi_add_container_before_event(){
-// 	if( !is_admin() ){
-// 		echo '<div class="abi-date"></div>';
-// 		// echo tribe_get_start_date(  );
-// 	}
-// }
-// add_action( 'tribe_events_before_the_event_title', 'abi_add_container_before_event' );
+function abi_add_container_before_event(){
+	if( !is_admin() ){
+		echo '<div class="events-main-date" style="float: left; width: 79px; background: rgb(248, 151, 40) none repeat scroll 0% 0%; height: 79px; border-radius: 100%;">';
+		$abi_date = explode(" ", tribe_get_start_date( null, false ) );
+		echo $abi_date[0] . '<b>' . $abi_date[1] . '</b>';
+		echo '</div><div class="events-main-content" style="float:right;">';
+	}
+}
+add_action( 'tribe_events_before_the_event_title', 'abi_add_container_before_event' );
+
+
+
+// ADD Location
+function abi_add_location_event(){
+	if( !is_admin() ){
+		echo '<div class="events-main-venue">' . tribe_get_venue() . '</div>';
+	}
+}
+add_action( 'tribe_events_after_the_meta', 'abi_add_location_event' );
 
 
 // END
 function abi_add_container_after_event(){
 	if( !is_admin() ){
-		echo '<div class="abi-date"></div>';
+		echo '</div>';
 	}
 }
 add_action( 'tribe_events_after_the_content', 'abi_add_container_after_event' );

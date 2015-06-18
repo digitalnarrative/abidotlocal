@@ -959,16 +959,26 @@ form#group-settings-form input[type="checkbox"] {
   padding: 10px;
 }
 .events-main-date {
-  background: rgb(248, 151, 40) none repeat scroll 0 0;
+  background: #f89728;
   border-radius: 100%;
+  color: #fff;
   float: left;
+  font: 300 16px "Bernino Sans";
   height: 79px;
   margin-right: 10px;
+  text-align: center;
+  text-transform: uppercase;
   width: 79px;
+}
+.events-main-date b {
+  display: block;
 }
 .events-main-content {
   float: right;
   width: calc(100% - 89px);
+}
+.tribe-events-list .tribe-events-loop .tribe-events-content {
+  font: 12px/1 "Freight Sans Pro";
 }
 
 
