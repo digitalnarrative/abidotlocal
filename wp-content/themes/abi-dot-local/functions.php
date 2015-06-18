@@ -964,10 +964,12 @@ function abi_entry_meta(){
 // START
 function abi_add_container_before_event(){
 	if( !is_admin() ){
-		echo '<div class="events-main-date" style="float: left; width: 79px; background: rgb(248, 151, 40) none repeat scroll 0% 0%; height: 79px; border-radius: 100%;">';
-		$abi_date = explode(" ", tribe_get_start_date( null, false ) );
-		echo $abi_date[0] . '<b>' . $abi_date[1] . '</b>';
-		echo '</div><div class="events-main-content" style="float:right;">';
+		echo '<div class="events-main-date" style=">';
+		
+		$abi_date = explode(" ", tribe_get_start_date( null, false, 'M j' ) );
+		echo '<p>' . $abi_date[0] . '<span>' . $abi_date[1] . '</span></p>';
+
+		echo '</div><div class="events-main-content">';
 	}
 }
 add_action( 'tribe_events_before_the_event_title', 'abi_add_container_before_event' );
