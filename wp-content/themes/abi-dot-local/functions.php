@@ -967,4 +967,4 @@ function abi_add_container_before_event(){
 		// echo tribe_get_start_date(  );
 	}
 }
-add_action( 'tribe_events_before_the_event_title', 'abi_add_container_before_event' )
+add_action( 'tribe_events_before_the_event_title', 'abi_add_container_before_event' );
