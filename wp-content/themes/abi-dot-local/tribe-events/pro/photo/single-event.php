@@ -24,7 +24,12 @@ global $post;
 	<?php echo tribe_event_featured_image( null, 'medium' ); ?>
 
 	<div class="tribe-events-event-details tribe-clearfix">
-
+	
+		<div class="events-main-date">
+			<?php $abi_date = explode(" ", tribe_get_start_date( null, false, 'M j' ) );
+			echo '<p>' . $abi_date[0] . '<span>' . $abi_date[1] . '</span></p>'; ?>
+		</div>
+		<div class="events-main-content">
 		<!-- Event Title -->
 		<?php do_action( 'tribe_events_before_the_event_title' ); ?>
 		<h2 class="tribe-events-list-event-title entry-title summary">
@@ -33,6 +38,9 @@ global $post;
 			</a>
 		</h2>
 		<?php do_action( 'tribe_events_after_the_event_title' ); ?>
+
+		<!-- Event Venue -->
+		<div class="events-main-venue"><?php echo tribe_get_venue(); ?></div>
 
 		<!-- Event Meta -->
 		<?php do_action( 'tribe_events_before_the_meta' ); ?>
@@ -52,7 +60,7 @@ global $post;
 			<?php echo tribe_events_get_the_excerpt() ?>
 		</div>
 		<?php do_action( 'tribe_events_after_the_content' ) ?>
-
+		</div>
 	</div><!-- /.tribe-events-event-details -->
 
 </div><!-- /.tribe-events-photo-event-wrap -->

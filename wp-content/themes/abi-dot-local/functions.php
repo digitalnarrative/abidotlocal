@@ -960,35 +960,3 @@ function abi_entry_meta(){
 }
 
 
-/* Edit Event List view */
-// START
-function abi_add_container_before_event(){
-	if( !is_admin() ){
-		echo '<div class="events-main-date">';
-		
-		$abi_date = explode(" ", tribe_get_start_date( null, false, 'M j' ) );
-		echo '<p>' . $abi_date[0] . '<span>' . $abi_date[1] . '</span></p>';
-
-		echo '</div><div class="events-main-content">';
-	}
-}
-add_action( 'tribe_events_before_the_event_title', 'abi_add_container_before_event' );
-
-
-
-// ADD Location
-function abi_add_location_event(){
-	if( !is_admin() ){
-		echo '<div class="events-main-venue">' . tribe_get_venue() . '</div>';
-	}
-}
-add_action( 'tribe_events_after_the_meta', 'abi_add_location_event' );
-
-
-// END
-function abi_add_container_after_event(){
-	if( !is_admin() ){
-		echo '</div>';
-	}
-}
-add_action( 'tribe_events_after_the_content', 'abi_add_container_after_event' );
