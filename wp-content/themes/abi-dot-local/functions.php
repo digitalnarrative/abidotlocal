@@ -964,3 +964,18 @@ function abi_entry_meta(){
 
 	echo $author . '<span class="meta-pipe">|</span>' . $date;
 }
+
+
+/**
+
+Added by DigitalNarrative
+
+*/
+
+/**
+Premium Web Fonts
+*/
+function abi_permium_web_fonts(){
+	wp_enqueue_style( 'premium-web-font', get_stylesheet_directory_uri() . '/fonts/style.css' );
+}
+add_action( 'wp_enqueue_scripts', 'abi_permium_web_fonts' );

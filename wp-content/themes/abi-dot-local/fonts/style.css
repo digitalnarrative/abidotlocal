@@ -1,0 +1,100 @@
+/*******************************************
+*************** Freight Sans ***************
+*******************************************/
+
+@font-face {
+  font-family: 'Freight Sans Pro';
+  src: url('freigsanprobook-webfont.eot');
+  src: url('freigsanprobook-webfont.eot?#iefix') format('embedded-opentype'),
+     url('freigsanprobook-webfont.woff2') format('woff2'),
+     url('freigsanprobook-webfont.woff') format('woff'),
+     url('freigsanprobook-webfont.ttf') format('truetype'),
+     url('freigsanprobook-webfont.svg#freightsans_probook') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freight Sans Pro';
+  src: url('freigsanpromed-webfont.eot');
+  src: url('freigsanpromed-webfont.eot?#iefix') format('embedded-opentype'),
+     url('freigsanpromed-webfont.woff2') format('woff2'),
+     url('freigsanpromed-webfont.woff') format('woff'),
+     url('freigsanpromed-webfont.ttf') format('truetype'),
+     url('freigsanpromed-webfont.svg#freightsans_promedium') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freight Sans Pro';
+  src: url('freigsanprobold-webfont.eot');
+  src: url('freigsanprobold-webfont.eot?#iefix') format('embedded-opentype'),
+     url('freigsanprobold-webfont.woff2') format('woff2'),
+     url('freigsanprobold-webfont.woff') format('woff'),
+     url('freigsanprobold-webfont.ttf') format('truetype'),
+     url('freigsanprobold-webfont.svg#freightsans_probold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+
+/*******************************************
+*************** Bernino Sans ***************
+*******************************************/
+
+@font-face {
+  font-family: 'Bernino Sans';
+  src: url('berninosans-compressedlight-webfont.eot');
+  src: url('berninosans-compressedlight-webfont.eot?#iefix') format('embedded-opentype'),
+     url('berninosans-compressedlight-webfont.woff2') format('woff2'),
+     url('berninosans-compressedlight-webfont.woff') format('woff'),
+     url('berninosans-compressedlight-webfont.ttf') format('truetype'),
+     url('berninosans-compressedlight-webfont.svg#bernino_sanscompressed_light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bernino Sans';
+  src: url('berninosans-compressedregular-webfont.eot');
+  src: url('berninosans-compressedregular-webfont.eot?#iefix') format('embedded-opentype'),
+     url('berninosans-compressedregular-webfont.woff2') format('woff2'),
+     url('berninosans-compressedregular-webfont.woff') format('woff'),
+     url('berninosans-compressedregular-webfont.ttf') format('truetype'),
+     url('berninosans-compressedregular-webfont.svg#bernino_sanscompressedRg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bernino Sans';
+  src: url('berninosans-compressedsemibold-webfont.eot');
+  src: url('berninosans-compressedsemibold-webfont.eot?#iefix') format('embedded-opentype'),
+     url('berninosans-compressedsemibold-webfont.woff2') format('woff2'),
+     url('berninosans-compressedsemibold-webfont.woff') format('woff'),
+     url('berninosans-compressedsemibold-webfont.ttf') format('truetype'),
+     url('berninosans-compressedsemibold-webfont.svg#bernino_sanscompressedSBd') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bernino Sans';
+  src: url('berninosans-compressedbold-webfont.eot');
+  src: url('berninosans-compressedbold-webfont.eot?#iefix') format('embedded-opentype'),
+     url('berninosans-compressedbold-webfont.woff2') format('woff2'),
+     url('berninosans-compressedbold-webfont.woff') format('woff'),
+     url('berninosans-compressedbold-webfont.ttf') format('truetype'),
+     url('berninosans-compressedbold-webfont.svg#bernino_sanscompressed_bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bernino Sans';
+  src: url('berninosans-compressedextrabold-webfont.eot');
+  src: url('berninosans-compressedextrabold-webfont.eot?#iefix') format('embedded-opentype'),
+     url('berninosans-compressedextrabold-webfont.woff2') format('woff2'),
+     url('berninosans-compressedextrabold-webfont.woff') format('woff'),
+     url('berninosans-compressedextrabold-webfont.ttf') format('truetype'),
+     url('berninosans-compressedextrabold-webfont.svg#bernino_sanscompressedXBd') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
