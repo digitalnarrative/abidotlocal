@@ -945,6 +945,12 @@ form#group-settings-form input[type="checkbox"] {
 }
 
 /* Added by DN */
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
 .tribe-events-before-html {
   margin: auto;
   width: 650px;

@@ -959,3 +959,12 @@ function abi_entry_meta(){
 	echo $author . '<span class="meta-pipe">|</span>' . $date;
 }
 
+
+/* Edit Event List view */
+function abi_add_container_before_event(){
+	if( !is_admin() ){
+		echo '<div class="left"></div>';
+		// echo tribe_get_start_date(  );
+	}
+}
+add_action( 'tribe_events_before_the_event_title', 'abi_add_container_before_event' )
