@@ -35,18 +35,12 @@ add_action( 'after_setup_theme', 'buddyboss_child_setup' );
  */
 function buddyboss_child_scripts_styles()
 {
-  /**
-   * Scripts and Styles loaded by the parent theme can be unloaded if needed
-   * using wp_deregister_script or wp_deregister_style.
-   *
-   * See the WordPress Codex for more information about those functions:
-   * http://codex.wordpress.org/Function_Reference/wp_deregister_script
-   * http://codex.wordpress.org/Function_Reference/wp_deregister_style
-   **/
-
   /*
    * Styles
    */
+  // Premium Web Fonts
+  wp_enqueue_style( 'premium-web-font', get_stylesheet_directory_uri() . '/fonts/style.css' );
+
   wp_enqueue_style( 'header-account', get_stylesheet_directory_uri().'/css/header-account.css' );
   wp_enqueue_style( 'buddyboss-child-custom', get_stylesheet_directory_uri().'/css/custom.css' );
   wp_enqueue_script( 'buddyboss-child-js', get_stylesheet_directory_uri(). '/js/custom-scripts.js', array( 'jquery' ),'1.0',true );
@@ -965,17 +959,3 @@ function abi_entry_meta(){
 	echo $author . '<span class="meta-pipe">|</span>' . $date;
 }
 
-
-/**
-
-Added by DigitalNarrative
-
-*/
-
-/**
-Premium Web Fonts
-*/
-function abi_permium_web_fonts(){
-	wp_enqueue_style( 'premium-web-font', get_stylesheet_directory_uri() . '/fonts/style.css' );
-}
-add_action( 'wp_enqueue_scripts', 'abi_permium_web_fonts' );
