@@ -955,6 +955,21 @@ form#group-settings-form input[type="checkbox"] {
   margin: auto;
   width: 650px;
 }
+.tribe-events-list .tribe-events-photo-event .tribe-events-event-details {
+  padding: 10px;
+}
+.events-main-date {
+  background: rgb(248, 151, 40) none repeat scroll 0 0;
+  border-radius: 100%;
+  float: left;
+  height: 79px;
+  margin-right: 10px;
+  width: 79px;
+}
+.events-main-content {
+  float: right;
+  width: calc(100% - 89px);
+}
 
 
 /*--------------------------------------------------------------

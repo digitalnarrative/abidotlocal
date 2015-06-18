@@ -961,10 +961,20 @@ function abi_entry_meta(){
 
 
 /* Edit Event List view */
-function abi_add_container_before_event(){
+// START
+// function abi_add_container_before_event(){
+// 	if( !is_admin() ){
+// 		echo '<div class="abi-date"></div>';
+// 		// echo tribe_get_start_date(  );
+// 	}
+// }
+// add_action( 'tribe_events_before_the_event_title', 'abi_add_container_before_event' );
+
+
+// END
+function abi_add_container_after_event(){
 	if( !is_admin() ){
-		echo '<div class="left"></div>';
-		// echo tribe_get_start_date(  );
+		echo '<div class="abi-date"></div>';
 	}
 }
-add_action( 'tribe_events_before_the_event_title', 'abi_add_container_before_event' );
+add_action( 'tribe_events_after_the_content', 'abi_add_container_after_event' );
