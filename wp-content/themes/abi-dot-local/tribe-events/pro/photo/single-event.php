@@ -21,6 +21,8 @@ global $post;
 
 <div class="tribe-events-photo-event-wrap">
 
+	<div class="events-main-location" style="background-image:url(<?php echo wp_get_attachment_image_src( get_post_thumbnail_id( (int) tribe_get_organizer_id( $post->ID ) ), 'full' )[0] ?>)"><?php echo tribe_get_organizer(); ?></div>
+
 	<?php echo tribe_event_featured_image( null, 'medium' ); ?>
 
 	<div class="tribe-events-event-details tribe-clearfix">
@@ -57,7 +59,7 @@ global $post;
 		<!-- Event Content -->
 		<?php do_action( 'tribe_events_before_the_content' ); ?>
 		<div class="tribe-events-list-photo-description tribe-events-content entry-summary description">
-			<?php echo tribe_events_get_the_excerpt() ?>
+			<?php echo substr( get_the_excerpt(), 0, 95) . ' ...'; ?>
 		</div>
 		<?php do_action( 'tribe_events_after_the_content' ) ?>
 		</div>

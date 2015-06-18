@@ -955,8 +955,19 @@ form#group-settings-form input[type="checkbox"] {
   margin: auto;
   width: 650px;
 }
+#tribe-events-photo-events .type-tribe_events.tribe-events-photo-event {
+  margin: 0 2% 30px 0;
+  width: 31.2%;
+}
 .tribe-events-list .tribe-events-photo-event .tribe-events-event-details {
   padding: 10px;
+}
+.events-main-location {
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-top: 1px solid #808080;
+  line-height: 39px;
+  padding-left: 50px;
 }
 .events-main-date {
   background: #f89728;
@@ -1003,6 +1014,7 @@ form#group-settings-form input[type="checkbox"] {
   font: 300 14px/1.1 "Freight Sans Pro";
   padding: 8px 0 0;
 }
+
 
 
 /*--------------------------------------------------------------
