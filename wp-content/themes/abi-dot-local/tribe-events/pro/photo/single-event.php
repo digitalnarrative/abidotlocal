@@ -59,7 +59,7 @@ global $post;
 		<!-- Event Content -->
 		<?php do_action( 'tribe_events_before_the_content' ); ?>
 		<div class="tribe-events-list-photo-description tribe-events-content entry-summary description">
-			<?php echo substr( get_the_excerpt(), 0, 95) . ' ...'; ?>
+			<?php echo substr( get_the_excerpt(), 0, 105) . ' ...'; ?>
 		</div>
 		<?php do_action( 'tribe_events_after_the_content' ) ?>
 		</div>
