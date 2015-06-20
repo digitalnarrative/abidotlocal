@@ -960,3 +960,5 @@ function abi_entry_meta(){
 }
 
 
+// Remove "Upcoming Events" page title
+add_filter( 'tribe_get_events_title', '__return_false' );
