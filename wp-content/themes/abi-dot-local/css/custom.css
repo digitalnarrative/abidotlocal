@@ -952,7 +952,7 @@ form#group-settings-form input[type="checkbox"] {
   float: right;
 }
 .tribe-events-before-html {
-  margin: auto;
+  margin: 0 auto 40px;
   width: 650px;
 }
 #tribe-events-photo-events {
@@ -1023,6 +1023,9 @@ form#group-settings-form input[type="checkbox"] {
 }
 
 /* Filter-bar */
+#tribe-events-content-wrapper {
+  position: relative;
+}
 #tribe-bar-form {
   background: none;
 }
@@ -1059,7 +1062,7 @@ form#group-settings-form input[type="checkbox"] {
   background: #f5f5f5 url("../images/magnify-glass-icon.png") no-repeat scroll 6px center;
   border: 0 none;
   line-height: 18px;
-  padding: 8px 7px 8px 30px;
+  padding: 6px 7px 6px 30px;
   width: 320px;
 }
 #tribe-bar-form .tribe-bar-submit input[type="submit"] {
@@ -1082,6 +1085,37 @@ form#group-settings-form input[type="checkbox"] {
 .tribe-bar-search-filter {
   margin-right: 5px;
 }
+.tribe-events-filters-group-heading,
+.tribe_events_filters_close_filters,
+.tribe_events_filters_show_filters,
+.tribe-events-filters-mobile-controls {
+  display: none;
+}
+.tribe-events-filters-horizontal {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 240px;
+}
+#tribe_events_filter_control {
+  float: right;
+}
+#tribe_events_filters_reset {
+  line-height: 2.4;
+}
+#tribe_events_filter_item_organizers .buddyboss-select-inner {
+  border: 1px solid #b1b3b3;
+}
+#tribe_events_filter_item_organizers select {
+  font: 600 20px "Bernino Sans";
+  letter-spacing: .4px;
+  padding: 2px 3px 0px;
+  text-transform: uppercase;
+  width: 155px;
+  color: #686b6d;
+}
+
+
 
 
 /*--------------------------------------------------------------
