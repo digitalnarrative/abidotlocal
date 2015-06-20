@@ -46,7 +46,7 @@ function buddyboss_child_scripts_styles()
   wp_enqueue_script( 'buddyboss-child-js', get_stylesheet_directory_uri(). '/js/custom-scripts.js', array( 'jquery' ),'1.0',true );
 
   // Remove filterbar CSS
-	wp_dequeue_style( 'TribeEventsFilterView-css' );
+	wp_dequeue_style( 'Tribe__Events__Filterbar__View-css' );
 }
 add_action( 'wp_enqueue_scripts', 'buddyboss_child_scripts_styles', 9999 );
 
