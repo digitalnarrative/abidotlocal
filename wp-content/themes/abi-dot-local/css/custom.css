@@ -959,13 +959,14 @@ form#group-settings-form input[type="checkbox"] {
   max-width: 102.5%;
 }
 .type-tribe_events.tribe-events-photo-event .tribe-events-photo-event-wrap {
-  background: #ececec;
+  background: #fff;
 }
 #tribe-events-photo-events .type-tribe_events.tribe-events-photo-event {
   margin: 0 2% 30px 0;
   width: 31.2%;
 }
 .tribe-events-list .tribe-events-photo-event .tribe-events-event-details {
+  background: #ececec;
   padding: 10px;
 }
 .events-main-location {
@@ -1115,6 +1116,10 @@ form#group-settings-form input[type="checkbox"] {
   color: #686b6d;
 }
 
+/* Flow Flow Feed */
+.ff-theme-flat.ff-style-3 .ff-item .ff-icon::before {
+  border-width: 0;
+}
 
 
 

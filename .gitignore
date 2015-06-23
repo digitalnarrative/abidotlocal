@@ -10,6 +10,7 @@ Thumbs.db
 wp-config - Copy.php
 wp-content/plugins/
 wp-content/themes/twentyfifteen
+wp-content/themes/twentytwelve
 
 # wordpress specific
 wp-config.php
