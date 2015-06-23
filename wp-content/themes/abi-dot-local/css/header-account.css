@@ -323,6 +323,8 @@ body:not(.tablet) .header-account-login:hover .pop {
 	border:1px solid #b1b3b3;
 	box-shadow: none;
 }
+div#wpadminbar li a:before,
+#wpadminbar span.logout:before,
 .header-account-login .pop .logout a:before,
 .header-account-login .pop ul > li > .ab-sub-wrapper > ul li > .ab-item:before {
   content: '';
@@ -339,39 +341,52 @@ body:not(.tablet) .header-account-login:hover .pop {
   color: #f2f2f2;
   font-size: 18px;
 }
-.ab-sub-wrapper .ab-sub-wrapper li a:before {
+.ab-sub-wrapper .ab-sub-wrapper li a:before,
+div#wpadminbar .dashboard .ab-sub-wrapper li a:before {
 	display: none!important;
 }
+#wpadminbar ul.dashboard > .menupop > a:before,
 .header-account-login .pop ul > li > .ab-sub-wrapper > ul li#wp-admin-bar-my-account-activity > .ab-item:before {
 	content: '\f022';
 }
+#wpadminbar #wp-admin-bar-my-account-xprofile a:before,
 .header-account-login .pop ul > li > .ab-sub-wrapper > ul li#wp-admin-bar-my-account-xprofile > .ab-item:before {
 	content: '\f007';
 }
+#wpadminbar #wp-admin-bar-my-account-notifications a:before,
 .header-account-login .pop ul > li > .ab-sub-wrapper > ul li#wp-admin-bar-my-account-notifications > .ab-item:before {
 	content: '\f0f3';
 }
+#wpadminbar #wp-admin-bar-my-account-messages a:before,
 .header-account-login .pop ul > li > .ab-sub-wrapper > ul li#wp-admin-bar-my-account-messages > .ab-item:before {
 	content: '\f1fa';
 }
+#wpadminbar #wp-admin-bar-my-account-friends a:before,
 .header-account-login .pop ul > li > .ab-sub-wrapper > ul li#wp-admin-bar-my-account-friends > .ab-item:before {
 	content: '\f0c0';
 }
+#wpadminbar #wp-admin-bar-my-account-groups a:before,
 .header-account-login .pop ul > li > .ab-sub-wrapper > ul li#wp-admin-bar-my-account-groups > .ab-item:before {
 	content: '\f041';
 }
+#wpadminbar #wp-admin-bar-my-account-forums a:before,
 .header-account-login .pop ul > li > .ab-sub-wrapper > ul li#wp-admin-bar-my-account-forums > .ab-item:before {
 	content: '\f075';
 }
 .header-account-login .pop ul > li > .ab-sub-wrapper > ul li#wp-admin-bar-my-account-forums > .ab-item:before {
 	content: '\f075';
 }
+#wpadminbar #wp-admin-bar-my-account-settings a:before,
 .header-account-login .pop ul > li > .ab-sub-wrapper > ul li#wp-admin-bar-my-account-settings > .ab-item:before {
 	content: '\f085';
 }
 .header-account-login .pop .logout a:before{
 	content: '\f08b';
 }
+#wpadminbar span.logout:before{
+  content: '\f08b';
+}
+
 #wp-admin-bar-my-account-photos,
 #wp-admin-bar-my-account-bp_docs,
 #wp-admin-bar-my-account-blog,

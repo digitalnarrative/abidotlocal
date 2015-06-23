@@ -44,6 +44,8 @@ function buddyboss_child_scripts_styles()
   wp_enqueue_style( 'header-account', get_stylesheet_directory_uri().'/css/header-account.css' );
   wp_enqueue_style( 'buddyboss-child-custom', get_stylesheet_directory_uri().'/css/custom.css' );
   wp_enqueue_script( 'buddyboss-child-js', get_stylesheet_directory_uri(). '/js/custom-scripts.js', array( 'jquery' ),'1.0',true );
+  wp_dequeue_script( 'buddyboss-main' ); 
+  wp_enqueue_script( 'buddyboss-js', get_stylesheet_directory_uri(). '/js/buddyboss.js', array( 'jquery' ),'1.0',true );
 
   // Remove filterbar CSS
 	wp_dequeue_style( 'Tribe__Events__Filterbar__View-css' );
@@ -821,6 +823,7 @@ function buddyboss_adminbar_item_add_active(&$wp_admin_bar,$name) {
  * @since Boss 1.0.0
  **/
 function buddyboss_memory_admin_bar_nodes() { 
+
 	static $bb_memory_admin_bar_step;
 	global $bb_adminbar_myaccount;
     
@@ -961,6 +964,92 @@ function abi_entry_meta(){
 
 	echo $author . '<span class="meta-pipe">|</span>' . $date;
 }
+
+
+
+add_filter('widget_text', 'do_shortcode');
+
+
+function jm_get_recent_posts(){
+	global $post;
+	$recentPosts = new WP_Query();
+	$recentPosts->query('showposts=3');
+
+	while ($recentPosts->have_posts()) : 
+		$recentPosts->the_post();
+		$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 200,200 ), false, '' ); 
+		$html .= '<article class="recent-post">';
+			if( get_the_post_thumbnail( )) {
+			$class = 'has_thumbnail'; 
+		$html .= '<a class="thumb" href="' . get_the_permalink() . '" style="background-image:url(' . $src[0] . ');"></a>';
+			} else {
+			$class = '';  
+			} 
+		$html .=	'<div class="recent-post-content ' . $class . '">';
+		$html .=	'<h3 class="title">';
+		$html .=	'<a href="' . get_the_permalink() . '">' . get_the_title() . '</a>';
+		$html .= 	'</h3>';
+		$html .=	excerpt(20);
+		$html .=	'<p class="recent-post_comments"> ';
+		$num_comments = get_comments_number();
+		if ($num_comments == 0){
+		}
+		else if ($num_comments == 1){
+			$html .= '<i class="fa fa-comments"></i> 1 comment</p>';
+		} else if ($num_comments > 1){
+			$html .= '<i class="fa fa-comments"></i> ' . $num_comments . ' comments</p>';
+		}
+		$html .=	'</div>';
+		$html .=    '</article>';
+	endwhile;
+	return $html; 
+}
+
+add_shortcode( 'jm_recent_posts', 'jm_get_recent_posts' );
+
+
+function new_excerpt_more( $more ) {
+	return '... <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'buddyboss-child' ) . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+function excerpt($limit) {
+ $excerpt = explode(' ', get_the_excerpt(), $limit);
+ if (count($excerpt)>=$limit) {
+ array_pop($excerpt);
+ $excerpt = implode(" ",$excerpt).'...';
+ } else {
+ $excerpt = implode(" ",$excerpt);
+ }
+ $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
+ return $excerpt;
+}
+
+
+
+
+function jm_recent_comments() {
+	$args = array(
+       	'number' => '5', 
+       	'status' => 'approve',
+             );
+    $posts = get_comments($args);
+
+    foreach ($posts as $post) {
+     	$avatar = get_avatar(  $post->user_id , 40 );
+
+		$html .=  '<div class="jm_recent_comment">';
+		$html .=  '<div class="jm_recent_comment_avatar">' . $avatar . '</div>';
+		$html .=  '<div class="jm_recent_comment_body">';
+		$html .=  '<p class="jm_recent_comment_content"><span class="jm_recent_author">' . $post->comment_author . '</span> commented on <a class="jm_recent_link" href="' . get_the_permalink($post->comment_post_ID) . '">' . get_the_title($post->comment_post_ID) . '</a></p>';
+		$html .=  '<p class="jm_recent_comment_date">' . date('F j, Y, g:i a', strtotime($post->comment_date)) . '.</p>';
+		$html .=  '</div><!--.jm_recent_comment_body-->';
+		$html .=  '</div><!--.jm_recent_comment-->';
+
+    }
+    return $html;
+}
+add_shortcode( 'jm_recent_comments', 'jm_recent_comments' );
 
 
 // Remove "Upcoming Events" page title

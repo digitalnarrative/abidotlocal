@@ -25,8 +25,8 @@ get_header(); ?>
 		<div class="home_right">
 			<div class="home_right_box cities">
 				<h3>Cities</h3>
-				<a class="absolute_link" href="<?php echo bloginfo('url');?>/forums"></a>
-				<a class="home_right_link" href="#">Find an ABI.Local near you</a>
+				<a class="absolute_link" href="<?php echo bloginfo('url');?>/groups"></a>
+				<a class="home_right_link" href="<?php echo bloginfo('url');?>/groups">Find an ABI.Local near you</a>
 				<div class="home_right_arrow"><img src="<?php echo get_stylesheet_directory_uri();?>/images/right-arrow.png"></div>
 			</div>
 

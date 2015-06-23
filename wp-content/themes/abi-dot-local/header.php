@@ -34,7 +34,36 @@
 <body <?php if ( current_user_can('manage_options') ) : ?>id="role-admin"<?php endif; ?> <?php body_class(); ?>>
 
 <?php do_action( 'buddyboss_before_header' ); ?>
-
+<div id="wpadminbar">
+    <a class="x" href="#"><i class="fa fa-close"></i></a>
+    <a class="user-link" href="<?php echo bp_core_get_user_domain( get_current_user_id() ); ?>">
+        <span>
+            <?php echo bp_core_fetch_avatar ( array( 'item_id' => get_current_user_id(), 'type' => 'full', 'width' => '50', 'height' => '50' ) );  ?>                        </span>
+        <span class="name"><?php echo bp_core_get_user_displayname( get_current_user_id() ); ?></span>
+    </a>
+    <hr class="blue-hr">
+    <ul class="dashboard">
+        <li class="menupop">
+            <a class="ab-item" href="<?php echo admin_url(); ?>"><?php _e('Dashboard','boss'); ?></a>
+            <div class="ab-sub-wrapper">
+                <ul class="ab-submenu">
+                    <li>
+                        <a href="<?php echo admin_url(); ?>"><?php _e('Dashboard','boss'); ?></a>
+                        <a href="<?php echo admin_url('widgets.php'); ?>"><?php _e( 'News Feed', 'boss' );?></a>
+                        <a href="<?php echo admin_url('themes.php'); ?>"><?php _e( 'My Likes', 'boss' );?></a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <?php buddyboss_adminbar_myaccount();?>
+    <div class="clearfix"></div>
+    <hr class="blue-hr">
+    
+    <span class="logout">
+        <a href="<?php echo wp_logout_url(); ?>"><?php _e('Logout','boss'); ?></a>
+    </span>
+</div>
 <header id="masthead" class="site-header" role="banner" data-infinite="<?php echo (esc_attr(get_option('buddyboss_activity_infinite')) !== 'off')?'on':'off'; ?>">
 
 	<div class="header-inner">
@@ -58,7 +87,7 @@
         <?php endif; ?>
 
        
-        <div class="right-column"
+        <div class="right-column">
             <?php if ( is_user_logged_in() ) : ?>
                            
                                 
@@ -270,6 +299,7 @@
 	<nav id="site-navigation" class="main-navigation" role="navigation">
 		<div class="nav-inner">
 
+            <div class="mobile"><?php get_search_form( );?></div>
 			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'buddyboss' ); ?>"><?php _e( 'Skip to content', 'buddyboss' ); ?></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'menu_class' => 'nav-menu clearfix' ) ); ?>
     
@@ -294,9 +324,11 @@
     <h1><a class="mobile-site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 </div><!-- #mobile-header -->
 <div id="breadcrumbs" class="container">
-    <?php
-    echo do_shortcode( '[breadcrumb]' ); 
-    ?>
+    <?php if ( is_home() || is_singular('post' )) {
+        if ( function_exists('yoast_breadcrumb') ) {
+            yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+        }
+    } ?>
 </div>
 <div id="main-wrap"> <!-- Wrap for Mobile content -->
     <div id="inner-wrap"> <!-- Inner Wrap for Mobile content -->

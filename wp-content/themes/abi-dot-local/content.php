@@ -14,7 +14,7 @@
 		<header class="entry-header">
 			
 			<!-- Single blog post -->
-			<?php if ( is_single() ) : ?>
+			<?php if ( is_single()  ) : ?>
 			
 				<h1 class="entry-title"><?php the_title(); ?></h1>
 	
@@ -22,6 +22,7 @@
 					 the_post_thumbnail_and_caption();
 					 
 					}?>
+
 				<div class="entry-meta">
 					
 					<?php abi_entry_meta(); ?>
@@ -61,13 +62,14 @@
 				<?php the_excerpt(); ?>
 
 				<footer class="entry-meta">
-										
-					<?php buddyboss_entry_meta(); ?>
+											
+					<?php abi_entry_meta(); ?>
 					
 					<!-- reply link -->
 					<?php if ( comments_open() ) : ?>
+						<span class="meta-pipe">|</span>
 						<span class="comments-link">
-							<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'buddyboss' ) . '</span>', __( '1 Reply', 'buddyboss' ), __( '% Replies', 'buddyboss' ) ); ?>
+							<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a comment', 'buddyboss' ) . '</span>', __( '1 comment', 'buddyboss' ), __( '% comments', 'buddyboss' ) ); ?>
 						</span><!-- .comments-link -->
 					<?php endif; // comments_open() ?>
 

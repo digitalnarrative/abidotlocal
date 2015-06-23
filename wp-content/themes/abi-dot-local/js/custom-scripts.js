@@ -2,6 +2,21 @@
 
 jQuery( document ).ready( function () {
 
+	jQuery('#wpadminbar a.x').click(function(){
+		jQuery(document).trigger( 'menu-close.buddyboss' );
+	});
+
+	
+
+	}
+	jQuery('#wpadminbar .dashboard li a,#wp-admin-bar-my-account-buddypress li a').click(function(e){
+		// if the link has children, when clicked it shows the children instead of going somewhere
+		if( jQuery(this).closest('li').find('.ab-sub-wrapper').length != 0 ){
+			e.preventDefault();
+			jQuery('li#wp-admin-bar-my-account li > .ab-sub-wrapper, ul.dashboard .ab-sub-wrapper').css('display', 'none');
+			jQuery(this).closest('li').find('.ab-sub-wrapper').toggle();
+		}
+	});
 
 	jQuery( '#respond form textarea' ).on('focus', function(){
 		jQuery(this).animate({height:200},200);
