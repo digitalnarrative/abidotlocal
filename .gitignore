@@ -7,7 +7,6 @@
 Thumbs.db
 
 # DigitalNarrative specific
-#wp-content/plugins/
 wp-content/themes/twentyfifteen
 
 # wordpress specific
@@ -34,8 +33,6 @@ wp-content/mysql.sql
 
 # wp core (as of 3.4.1)
 db-config.php
-index.php
-license.txt
 readme.html
 wp-activate.php
 wp-app.php
@@ -61,42 +58,4 @@ wp-trackback.php
 xmlrpc.php
 wp-admin
 wp-includes
-wp-content/index.php
-wp-content/themes/twentyten
-wp-content/themes/index.php
-wp-content/plugins/index.php
 
-# large/disallowed file types
-# a CDN should be used for these
-*.hqx
-*.bin
-*.exe
-*.dll
-*.deb
-*.dmg
-*.iso
-*.img
-*.msi
-*.msp
-*.msm
-*.mid
-*.midi
-*.kar
-*.mp3
-*.ogg
-*.m4a
-*.ra
-*.3gpp
-*.3gp
-*.mp4
-*.mpeg
-*.mpg
-*.mov
-*.webm
-*.flv
-*.m4v
-*.mng
-*.asx
-*.asf
-*.wmv
-*.avi
