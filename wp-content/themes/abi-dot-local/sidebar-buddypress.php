@@ -38,6 +38,13 @@
 		<?php elseif ( is_active_sidebar(  bp_get_current_group_slug()) && bp_is_group() ) : ?>
 		
 				<div id="secondary" class="widget-area" role="complementary">
+					<aside id="text-10" class="widget widget_text">			
+						<div class="textwidget">
+							<div class="group-about-widget">
+								<?php echo do_shortcode('[jm_group_about]' );?>
+							</div>
+						</div>
+					</aside>
 					<?php dynamic_sidebar( bp_get_current_group_slug() ); ?>
 				</div><!-- #secondary -->	
 		

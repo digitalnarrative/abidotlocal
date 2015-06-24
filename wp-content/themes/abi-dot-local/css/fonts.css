@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'berninosans-compressed';
+    src: url('fonts/berninosans-compressedbold-webfont.eot');
+    src: url('fonts/berninosans-compressedbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/berninosans-compressedbold-webfont.woff') format('woff'),
+         url('fonts/berninosans-compressedbold-webfont.ttf') format('truetype'),
+         url('fonts/berninosans-compressedbold-webfont.svg#berninosans-compressedbold') format('svg');
+	font-weight: 700;
+}
+
+@font-face {
+    font-family: 'berninosans-compressed';
+    src: url('fonts/berninosans-compressedlight-webfont.eot');
+    src: url('fonts/berninosans-compressedlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/berninosans-compressedlight-webfont.woff') format('woff'),
+         url('fonts/berninosans-compressedlight-webfont.ttf') format('truetype'),
+         url('fonts/berninosans-compressedlight-webfont.svg#berninosans-compressedlight') format('svg');
+	font-weight: 100;
+}
+
+@font-face {
+    font-family: 'berninosans-compressed';
+    src: url('fonts/berninosans-compressedregular-webfont.eot');
+    src: url('fonts/berninosans-compressedregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/berninosans-compressedregular-webfont.woff') format('woff'),
+         url('fonts/berninosans-compressedregular-webfont.ttf') format('truetype'),
+         url('fonts/berninosans-compressedregular-webfont.svg#berninosans-compressedregular') format('svg');
+	font-weight: 400;
+}
+
+@font-face {
+    font-family: 'berninosans-compressed';
+    src: url('fonts/berninosans-compressedsemibold-webfont.eot');
+    src: url('fonts/berninosans-compressedsemibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/berninosans-compressedsemibold-webfont.woff') format('woff'),
+         url('fonts/berninosans-compressedsemibold-webfont.ttf') format('truetype'),
+         url('fonts/berninosans-compressedsemibold-webfont.svg#berninosans-compressedsemibold') format('svg');
+	font-weight: 600;
+}
+
+@font-face {
+    font-family: 'FreightSansProBold';
+    src: url('fonts/FreightSansProBold-Regular.eot');
+    src: url('fonts/FreightSansProBold-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/FreightSansProBold-Regular.woff') format('woff'),
+         url('fonts/FreightSansProBold-Regular.ttf') format('truetype'),
+         url('fonts/FreightSansProBold-Regular.svg#FreightSansProBold') format('svg');
+
+}
+
+@font-face {
+    font-family: 'FreightSansProBook';
+    src: url('fonts/FreightSansProBook-Regular.eot');
+    src: url('fonts/FreightSansProBook-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/FreightSansProBook-Regular.woff') format('woff'),
+         url('fonts/FreightSansProBook-Regular.ttf') format('truetype'),
+         url('fonts/FreightSansProBook-Regular.svg#FreightSansProBook') format('svg');
+
+}
