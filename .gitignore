@@ -7,7 +7,7 @@
 Thumbs.db
 
 # DigitalNarrative specific
-wp-content/plugins/
+#wp-content/plugins/
 wp-content/themes/twentyfifteen
 
 # wordpress specific
