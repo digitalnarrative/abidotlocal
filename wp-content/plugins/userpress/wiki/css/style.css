@@ -1,0 +1,243 @@
+.userpress_wiki_tabs .f-dropdown  a{
+	color:#333;
+}
+
+.userpress_wiki_tabs .f-dropdown  a:hover  {
+    color: #008FE0;     
+}
+
+
+.userpress_wiki_tabs li.current {
+    color: black;
+    font-weight:bold;
+}
+
+.userpress_wiki_tabs a {
+font-weight:100;
+}
+
+
+#search_results ul {
+width:620px;
+position:absolute;
+z-index:999;
+border:1px solid #ccc;
+background:white;
+padding:8px;
+list-style:none;
+}
+
+#wikicontent_ifr, #userpress_wiki_infobox_ifr, #wp-wikicontent-editor-container {
+border:1px solid #ccc;
+min-height:300px;
+}
+
+
+
+.userpress_wiki_meta_box table {
+border:0;
+}
+
+
+.wiki-options li {
+margin-bottom:5px;
+}
+
+
+
+
+.wiki-options a:hover,.sticky-wiki-options a:hover {
+color:teal;
+text-decoration:none;
+}
+
+.userpress_wiki_clear {
+    clear: both;
+}
+
+
+
+
+.userpress_wiki_tabs {
+	line-height: 1 !important;
+	margin-bottom: 10px;
+	margin-left:-5px;
+}
+
+.userpress_wiki_tabs:after {
+	position: relative;
+		top: -1px;
+		left: 0;
+	background: transparent;
+	content: "";
+	display: block;
+	font-size: 0;
+	height: 1px;
+	line-height: 0;
+	width: 100%;
+}
+
+.userpress_wiki_tabs ul {
+	line-height: 1 !important;
+	margin: 0 !important;
+	padding: 0;
+}
+
+.userpress_wiki_tabs ul.left, .userpress_wiki_tabs ul.right {
+	width: auto !important;
+}
+
+.userpress_wiki_tabs ul.left {
+	float: left;
+}
+
+.userpress_wiki_tabs ul.right {
+	float: right;
+}
+
+.userpress_wiki_tabs li {
+	display: inline-block !important;
+	font-size: 0.9em !important;
+	line-height: 1 !important;
+	margin: 0 0 0 5px !important;
+	padding: 0 !important;
+	color: #999 !important;
+	background: #fcfcfc !important;
+}
+
+.userpress_wiki_tabs .f-dropdown li {
+border:none !important;
+}
+
+.userpress_wiki_tabs .f-dropdown li a {
+color:#333 !important;
+}
+
+.userpress_wiki_tabs .f-dropdown li:first-child a {
+padding:8px 15px !important;
+}
+
+
+.userpress_wiki_tabs li:hover {
+	border-color: #666 !important;
+}
+
+.userpress_wiki_tabs li:first-child {
+	margin-left: 0 !important;
+}
+
+
+.userpress_wiki_tabs li.current {
+	border-bottom: 1px solid white !important;
+	color: black !important;
+	background: white !important;
+	position: relative;
+		z-index: 5;
+}
+
+.userpress_wiki_tabs li.current:after {
+	position: absolute;
+		left: 0;
+		bottom: -1px;
+	background: #fff;
+	content: "";
+	display: block;
+	height: 2px;
+	width: 100%;
+}
+
+.userpress_wiki_tabs li a {
+	display: block;
+	line-height: 1 !important;	
+	padding: 5px 8px !important;
+	text-decoration: none !important;
+	color: inherit;
+}
+
+
+
+
+
+.type-userpress_wiki .post-edit-link {
+    display: none;
+}
+
+
+
+.userpress_wiki_meta_box {
+    clear: left;
+}
+
+.userpress_wiki_br_roles {
+    display: none;
+}
+
+.userpress_wiki_label_roles {
+    margin-right: 10px;
+}
+
+.userpress_wiki_title {
+    border-style: solid;
+    border-width: 1px;
+    font-size: 1.7em;
+    line-height: 100%;
+    outline: medium none;
+    padding: 3px 4px;
+    width: 100%;
+}
+
+#content .wp_themeSkin tr td {
+    padding: 0;
+}
+
+.wp_themeSkin tr.mceFirst td.mceToolbar {
+    background: url("../images/ed-bg.gif") repeat-x scroll left top #DFDFDF;
+    border-color: #DFDFDF;
+}
+
+.wp_themeSkin .mceButton {
+    color: #B2B2B2;
+}
+
+#content table.mceToolbar {
+    width: auto;
+    margin: 0 2px 2px;
+}
+
+div.userpress_wiki_top span.userpress_wiki_crumbs, 
+div.userpress_wiki_top a.userpress_wiki_crumbs {
+    font-size: 1.2em;
+    color: #888;
+}
+
+div.userpress_wiki_top {
+    padding-bottom: 5px;
+    font-size: 0.7em;
+    color: #888;
+    
+}
+
+#content div.userpress_wiki .entry-content {
+    padding-top: 0;
+}
+
+.wp_themeSkin table.mceLayout {
+    background: #fff;
+    margin-top: 5px;
+}
+
+.reveal-modal p {
+margin-top:10px;
+}
+
+.flag-description {
+font-size:11px;
+}
+
+input[type="text"], textarea {
+width:100%;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+/* 274725-1382365257-ai */

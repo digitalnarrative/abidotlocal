@@ -1,0 +1,61 @@
+div.bpsbuttoncontainer {
+	height:24px;
+	margin:10px 2px;
+	font-size:14px;
+	line-height:1.8em;
+	text-transform:none;
+	font-weight:normal;
+	letter-spacing:0em;
+	}
+
+div.bpsbutton {
+	margin:2px;
+	border-radius: 3px;
+	border:1px solid #ccc;
+	text-align:center;
+	background:#fff;
+	display:block;
+	cursor:pointer;
+	}
+
+div.bpsubbutton {
+	width:100px;
+	}
+	
+div.bpsubbutton.subscribed:hover, div.bpsunsubno:hover, div.bpsubbutton.delete:hover {
+	border:1px solid #ff0033;
+	color: #ff0033;
+	}
+	
+div.bpsubbutton.unsubscribed:hover, div.bpsunsubyes:hover {
+	border: 1px solid #00A7D6;
+	color: #00A7D6;
+	}
+	
+div.bpsubbutton.success {
+	background:#222;
+	color:#fff;
+	}
+div.bpsauscontainer {
+	display:none;
+	margin:2px;
+	text-align:center;
+	width:210px;
+	}
+
+div.bpsausbuttonbox {
+	background:#ffffff;
+	width:210px;
+	margin:2px;
+	position:relative;
+	float:none !important;
+	}
+
+div.bpsausbutton {
+	width: 48px;
+	font-size:1em;
+	height: 100%;
+	margin:0px 0px 0px 5px;
+	display:inline-block;
+	float:none !important;
+	}

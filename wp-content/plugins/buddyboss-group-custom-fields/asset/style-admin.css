@@ -1,0 +1,39 @@
+.bb-gcf-screen .add-field-btn {
+  float: right;
+  margin-right: 20px;
+}
+.bb-gcf-screen .screen-head {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: auto;
+}
+.bb-gcf-screen .fields-list {
+  background:white;
+  padding:10px;
+  width:100%;
+  box-sizing: border-box
+}
+.bb-gcf-screen .fields-list .field-box {
+  margin: 10px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.bb-gcf-screen .fields-list .field-box h4 {
+  padding: 0px;
+  margin: 0px;
+}
+.bb-gcf-screen .fields-list .field-box .desc {
+  color: rgb(142, 142, 142);
+}
+.bb-gcf-screen .fields-list .field-box .field-output {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bb-gcf-screen .fields-list .field-box .delete {
+  color: red;
+  float: right;
+  margin-top: 8px;
+}

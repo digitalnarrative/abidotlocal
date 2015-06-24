@@ -1,0 +1,26 @@
+table#bps_man_subs {
+ 	line-height: 1.714285714;
+ 	font-size:100%;
+ 	width:100%;
+}
+ 	
+table#bps_man_subs td.thumbnail {
+	width:50px;
+	height:50px;
+}
+
+table#bps_man_subs td.title {
+	vertical-align:middle;
+}
+
+table#bps_man_subs td.title a {
+	text-decoration:none;
+	}
+
+table#bps_man_subs td.delete {
+	vertical-align:middle;
+	width:218px;
+}
+table#bps_man_subs td.delete div {
+	float:right;
+	}

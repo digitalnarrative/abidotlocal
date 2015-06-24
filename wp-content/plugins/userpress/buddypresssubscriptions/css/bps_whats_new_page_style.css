@@ -1,0 +1,40 @@
+table#bps_whats_new {
+ 	line-height: 1.714285714;
+ 	font-size:100%;
+ 	width:100%
+ 	
+}
+ 	
+table#bps_whats_new td.thumbnail {
+	width:50px;
+	height:50px;
+}
+
+table#bps_whats_new td.info {
+	padding:0px;
+	margin:0px;
+	vertical-align:middle;
+}
+
+table#bps_whats_new td.info a {
+	text-decoration:none;
+}
+
+table#bps_whats_new td.info p {
+	padding:0px;
+	margin:0px;
+	font-style:italic;
+}
+
+a#bps_prev_link {
+	float:left;
+	}
+
+a#bps_next_link {
+	float:right;
+	}
+	
+body.subscriptions div#item-body > h3 {
+	margin:0px;
+	border: 0px;
+}

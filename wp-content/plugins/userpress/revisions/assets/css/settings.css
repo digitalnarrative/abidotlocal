@@ -1,0 +1,56 @@
+.wrap form
+{
+	
+}
+
+.wrap form .section-header h3
+{
+	text-shadow: rgba(255, 255, 255, 1.0) -1px 1px 0, rgba(0, 0, 0, 0.6) 0 0 12px;
+}
+.wrap form .section-header p
+{
+	text-shadow: rgba(255, 255, 255, 1.0) -1px 1px 0;
+
+}
+
+
+.wrap form .section
+{
+
+	margin: 15px 0 30px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow: inset 0 -15px 30px rgba(0, 0, 0, 0.03), 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+.wrap form .section-inner
+{
+	border-bottom-right-radius: 13px;
+	border-bottom-left-radius: 31px;
+}
+.wrap form .section-header
+{
+	padding: 0 10px;
+
+	overflow: hidden;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: rgba(33, 117, 155, 0.15) url(../images/stripes.png);
+
+	box-shadow: inset 0 -15px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.wrap form .section-header:after {
+	content: "";
+	display: block;
+	height: 5px;
+	margin: 0 -10px;
+
+	background-color: #777;
+	background-image: -ms-linear-gradient(bottom,#6D6D6D,gray);
+	background-image: -moz-linear-gradient(bottom,#6D6D6D,gray);
+	background-image: -o-linear-gradient(bottom,#6D6D6D,gray);
+	background-image: -webkit-gradient(linear,left bottom,left top,from(#6D6D6D),to(gray));
+	background-image: -webkit-linear-gradient(bottom,#6D6D6D,gray);
+	background-image: linear-gradient(bottom,#6D6D6D,gray);
+}

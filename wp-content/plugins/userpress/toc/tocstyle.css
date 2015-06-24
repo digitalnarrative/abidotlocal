@@ -1,0 +1,30 @@
+.userpress_wiki_toc {
+	border:1px solid #ddd;
+	padding:10px;
+	margin-bottom:30px;
+	}
+
+#userpress_toc {
+	margin-left:0;
+	}
+
+.userpress_wiki_toc ol li {
+	list-style-type:upper-roman;
+	}
+	
+.userpress_wiki_toc ol ol li {
+	list-style-type:upper-alpha;
+	}
+	
+.userpress_wiki_toc ol ol ol li {
+	list-style-type:decimal;
+	}
+
+.userpress_wiki_toc ol ol ol ol li{
+	list-style-type:lower-roman;
+	font-size:90%;
+	}
+	
+.userpress_wiki_toc ol ol ol ol ol li {
+	list-style-type:lower-alpha;
+	}

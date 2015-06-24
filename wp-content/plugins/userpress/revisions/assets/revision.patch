@@ -1,0 +1,23 @@
+--- revision.php	Wed Jun 20 15:44:22 2012
++++ revision-patched.php	Thu Jul  5 10:06:16 2012
+@@ -169,14 +169,17 @@
+ $identical = true;
+ foreach ( _wp_post_revision_fields() as $field => $field_title ) :
+ 	if ( 'diff' == $action ) {
+-		$left_content = apply_filters( "_wp_post_revision_field_$field", $left_revision->$field, $field );
+-		$right_content = apply_filters( "_wp_post_revision_field_$field", $right_revision->$field, $field );
++		$left_value = isset($left_revision->$field) ? $left_revision->$field : get_metadata( 'post', $left_revision->ID, $field, true );
++		$left_content = apply_filters( "_wp_post_revision_field_$field", $left_value, $field );
++		$right_value = isset($right_revision->$field) ? $right_revision->$field : get_metadata( 'post', $right_revision->ID, $field, true );
++		$right_content = apply_filters( "_wp_post_revision_field_$field", $right_value, $field );
+ 		if ( !$content = wp_text_diff( $left_content, $right_content ) )
+ 			continue; // There is no difference between left and right
+ 		$identical = false;
+ 	} else {
+ 		add_filter( "_wp_post_revision_field_$field", 'htmlspecialchars' );
+-		$content = apply_filters( "_wp_post_revision_field_$field", $revision->$field, $field );
++		$value = isset($revision->$field) ? $revision->$field : get_metadata( 'post', $revision->ID, $field, true );
++		$content = apply_filters( "_wp_post_revision_field_$field", $value, $field );
+ 	}
+ 	?>
+ 

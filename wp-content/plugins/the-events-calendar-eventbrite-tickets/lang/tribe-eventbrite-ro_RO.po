@@ -1,0 +1,1076 @@
+# Tribe Events Eventbrite Tickets by Modern Tribe, Inc.
+# Copyright (C) Modern Tribe, Inc.
+# This file is distributed under the same license as the Tribe Events Eventbrite Tickets package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Tribe Events Eventbrite Tickets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-03 22:04-0500\n"
+"PO-Revision-Date: 2014-01-26 12:24+0200\n"
+"Last-Translator: Arian - www.administrare-cantine.ro <arianserv@gmail.com>\n"
+"Language-Team: Arian | www.administrare-cantine.ro <arianserv@gmail.com>\n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ./\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../lib/eventbrite-api.class.php:76
+msgid ""
+"An error occurred while contacting Eventbrite. Please review your "
+"information and try again.<br />Error: "
+msgstr ""
+"A apărut o eroare la contactarea Eventbrite. Vă rugăm să revizuiţi "
+"informaţia şi apoi să reîncercaţi.<br />Eroare: "
+
+#: ../lib/eventbrite-api.class.php:82
+msgid ""
+"An error occurred while contacting Eventbrite. Please review your "
+"information and try again.<br />Status: "
+msgstr ""
+"A apărut o eroare la contactarea Eventbrite. Vă rugăm să revizuiţi "
+"informaţia şi apoi să reîncercaţi.<br />Status: "
+
+#: ../lib/eventbrite-api.class.php:84
+msgid ""
+"Eventbrite did not accept the update. Your changes have been saved locally."
+"<br />Status: "
+msgstr ""
+"EventBrite nu a acceptat actualizarea. Modificările au fost salvate local."
+"<br/>Status:"
+
+#: ../lib/eventbrite-api.class.php:86
+msgid ""
+"Eventbrite is not answering us. Most likely they are too busy. The changes "
+"have been saved locally, maybe try again later?"
+msgstr ""
+"EventBrite nu răspunde. Cel mai probabil sunt prea ocupaţi. Modificările au "
+"fost salvat local, puteţi reîncerca mai târziu?"
+
+#: ../lib/eventbrite-api.class.php:100
+msgid ""
+"An error occurred while updating Eventbrite. Please review your information "
+"and try again.<br />Error:<br />"
+msgstr ""
+"A apărut o eroare la actualizarea Eventbrite. Vă rugăm să revizuiţi "
+"informaţia şi apoi să reîncercaţi.<br />Eroare:<br />"
+
+#: ../lib/tribe-eventbrite.class.php:130
+msgid "The Events Calendar"
+msgstr "Calendarul de Evenimente"
+
+#: ../lib/tribe-eventbrite.class.php:131
+#, php-format
+msgid ""
+"To begin using The Events Calendar: Eventbrite Tickets, please install the "
+"latest version of <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events "
+"Calendar</a>."
+msgstr ""
+"Pentru a putea începe utilizarea Calendarului de Evenimente \"The Events "
+"Calendar\": Eventbrite Tickets, vă rugăm să instalaţi ultima versiune a <a "
+"href=\"%s\" class=\"thickbox\" title=\"%s\">The Events Calendar</a>."
+
+#: ../lib/tribe-eventbrite.class.php:397
+msgid "Ticket Name"
+msgstr "Nume Bilet"
+
+#: ../lib/tribe-eventbrite.class.php:398
+#: ../views/eventbrite-meta-box-extension.php:261
+msgid "Date to Start Ticket Sales"
+msgstr "Data de Punere în Vânzare a Biletelor"
+
+#: ../lib/tribe-eventbrite.class.php:399
+#: ../views/eventbrite-meta-box-extension.php:281
+msgid "Date to End Ticket Sales"
+msgstr "Data de Finalizare a Vânzării Biletelor"
+
+#: ../lib/tribe-eventbrite.class.php:400
+msgid "Ticket Type"
+msgstr "Tip Bilet"
+
+#: ../lib/tribe-eventbrite.class.php:401
+msgid "Ticket Cost"
+msgstr "Preţ Bilet"
+
+#: ../lib/tribe-eventbrite.class.php:402
+msgid "Ticket Quantity"
+msgstr "Cantitate Bilete"
+
+#: ../lib/tribe-eventbrite.class.php:403
+msgid "Ticket - Include Fee in Price"
+msgstr "Bilet - Includeţi un Comision în Preţ"
+
+#: ../lib/tribe-eventbrite.class.php:423
+msgid "Ticket Cost (must be numeric)"
+msgstr "Preţ Bilet (de tip numeric)"
+
+#: ../lib/tribe-eventbrite.class.php:435
+msgid "Ticket Payment Methods (at least one should be selected)"
+msgstr "Metode de Plată Bilete (trebuie selectat cel puţin una)"
+
+#: ../lib/tribe-eventbrite.class.php:443
+msgid "Ticket - Paypal Account Email Address"
+msgstr "Bilet - Adresa de Email a Contului Paypal"
+
+#: ../lib/tribe-eventbrite.class.php:445
+msgid "Ticket - Paypal Account Email Address (must be a valid email address)"
+msgstr ""
+"Bilet - Adresa de Email a Contului Paypal (trebuie să fie o adresa validă)"
+
+#: ../lib/tribe-eventbrite.class.php:452
+msgid "Ticket - Google Merchant ID"
+msgstr "Bilet - ID Comerciant Google (Google Merchant ID)"
+
+#: ../lib/tribe-eventbrite.class.php:455
+msgid "Ticket - Google Merchant Key"
+msgstr "Bilet - Cheie Comerciant Google (Google Merchant Key)"
+
+#: ../lib/tribe-eventbrite.class.php:460
+msgid ""
+"All required fields must be filled out correctly in order for this event to "
+"be associated to Eventbrite. The following required fields were not filled "
+"out (or not correctly):"
+msgstr ""
+"Toate câmpurile trebuie completate corect pentru ca acest eveniment să fie "
+"asociat cu Eventbrite. Următoarele câmpuri obligatorii nu au fost completate "
+"(sau completate incorect):"
+
+#: ../lib/tribe-eventbrite.class.php:464
+msgid "Please fill in the missing fields and try saving again."
+msgstr "Vă rugăm să completaţi câmpurile omise, iar apoi să reîncercaţi."
+
+#: ../lib/tribe-eventbrite.class.php:483
+msgid "Ticket sales start date cannot be after the event ends"
+msgstr ""
+"Data de punere în vânzare a biletelor nu poate exista după finalizarea "
+"evenimentului"
+
+#: ../lib/tribe-eventbrite.class.php:487
+msgid "Ticket sales end date cannot be after the event ends"
+msgstr ""
+"Data de finalizare a vânzării biletelor nu poate exista după finalizarea "
+"evenimentului"
+
+#: ../lib/tribe-eventbrite.class.php:491
+msgid "Ticket sales start date cannot be after ticket sales end date"
+msgstr ""
+"Data de punere în vânzare a biletelor nu poate exista după finalizarea "
+"punerii lor în vânzare"
+
+#: ../lib/tribe-eventbrite.class.php:495
+msgid "The dates you have chosen for your ticket sales are inconsistent"
+msgstr "Datele alese pentru vânzarea biletelor dvs. sunt inconsistente"
+
+#: ../lib/tribe-eventbrite.class.php:499
+msgid "Please adjust the dates and try saving again."
+msgstr "Vă rugăm să ajustaţi datele, iar apoi reîncercaţi să salvaţi."
+
+#: ../lib/tribe-eventbrite.class.php:563
+msgid "Tickets must have a name"
+msgstr "Biletele trebuie să aibă un nume"
+
+#: ../lib/tribe-eventbrite.class.php:573
+msgid "Paid tickets must have a numeric cost."
+msgstr "Biletele plătite trebuie să aibă un preţ numeric."
+
+#: ../lib/tribe-eventbrite.class.php:579
+msgid "Ticket quantity must be numeric"
+msgstr "Cantitatea de bilete trebuie să fie numerică"
+
+#: ../lib/tribe-eventbrite.class.php:636
+msgid "This post is a revision and cannot update an Evenbrite event."
+msgstr ""
+"Acest articol este o revizuire şi nu poate actualiza un eveniment Evenbrite."
+
+#: ../lib/tribe-eventbrite.class.php:642 ../lib/tribe-eventbrite.class.php:696
+msgid ""
+"Please supply a post title. This will become the Eventbrite event title."
+msgstr ""
+"Vă rugăm să furnizaţi un titlu de articol. Acesta va deveni titlul "
+"evenimentului Evenbrite."
+
+#: ../lib/tribe-eventbrite.class.php:686
+msgid "This post is a revision and cannot create an evenbrite event."
+msgstr ""
+"Acest articol este o revizuire şi nu poate crea un eveniment Evenbrite."
+
+#: ../lib/tribe-eventbrite.class.php:695
+msgid "Event must have a title"
+msgstr "Evenimentul trebuie să aibă un titlu"
+
+#: ../lib/tribe-eventbrite.class.php:734
+msgid ""
+"Your event could not be marked as live in Eventbrite. It was still created "
+"as a draft though. Please review the information below and proceed "
+"accordingly."
+msgstr ""
+"Evenimentul dvs. nu poate fi marcat ca activ în Evenbrite. Totuşi a fost "
+"creat ca şi ciornă/draft. Vă rugăm să revizuiţi informaţia de mai jos, apoi "
+"să actionaţi în conformitate."
+
+#: ../lib/tribe-eventbrite.class.php:912
+msgid ""
+"Eventbrite requires that the venue have a country, so the event was created "
+"at Eventbrite without a venue."
+msgstr ""
+"Eventbrite vă solicită ca locaţia să fie într-o ţară, deci evenimentul a "
+"fost creat la Eventbrite fără locație."
+
+#: ../lib/tribe-eventbrite.class.php:913
+msgid ""
+"If you want the listing at Eventbrite.com to include a venue, add a country "
+"to the venue now and Update this event."
+msgstr ""
+"Dacă doriți ca listarea de la Eventbrite.com să includă o locație, adăugați "
+"o țară locației acum și actualizați evenimentul."
+
+#: ../lib/tribe-eventbrite.class.php:914 ../lib/tribe-eventbrite.class.php:923
+msgid "Edit the venue"
+msgstr "Editare locaţie"
+
+#: ../lib/tribe-eventbrite.class.php:921
+msgid ""
+"Eventbrite requires that you specify the state for venues in the United "
+"States, so the event was created at Eventbrite without a venue."
+msgstr ""
+"Eventbrite cere specificarea statului pentru locații din Statele Unite, deci "
+"evenimentul a fost creat la Eventbrite fără locație."
+
+#: ../lib/tribe-eventbrite.class.php:922
+msgid ""
+"If you want the listing at Eventbrite.com to include a venue, add a state to "
+"the venue now and Update this event."
+msgstr ""
+"Dacă doriți ca listarea la Eventbrite.com să includă locația, adăugați "
+"statul locației acum și actualizați evenimentul."
+
+#: ../lib/tribe-eventbrite.class.php:967
+msgid "There was an error sending the venue to Eventbrite. Please try again."
+msgstr ""
+"A apărut o eroare la trimiterea locaţiei către Evenbrite. Vă rugăm să "
+"reîncercaţi."
+
+#: ../lib/tribe-eventbrite.class.php:1005
+msgid "Unamed Organizer"
+msgstr "Organizator Anonim"
+
+#: ../lib/tribe-eventbrite.class.php:1054
+msgid ""
+"An error occurred while updating Eventbrite's Organizer. Please review your "
+"information and try again.<br />Error:<br />"
+msgstr ""
+"A apărut o eroare la actualizarea Organizatorului Evenbrite. Vă rugăm să "
+"verificaţi informaţiile şi apoi să reîncercaţi.<br />Eroare:<br />"
+
+#: ../lib/tribe-eventbrite.class.php:1136
+msgid "We were unable to import your Eventbrite event. Please try again."
+msgstr ""
+"Nu am reușit să importăm evenimentul dvs. Eventbrite. Vă rugăm să "
+"reîncercaţi."
+
+#: ../lib/tribe-eventbrite.class.php:1139
+msgid "Event already imported."
+msgstr "Eveniment deja importat."
+
+#: ../lib/tribe-eventbrite.class.php:1142
+msgid ""
+"We were unable to import your Eventbrite event. Please verify the event id "
+"and try again."
+msgstr ""
+"Nu am reușit să importăm evenimentul dvs. Eventbrite. Vă rugăm să verificaţi "
+"id-ul evenimentului şi apoi să reîncercaţi."
+
+#: ../lib/tribe-eventbrite.class.php:1319
+msgid "This event is free to attend"
+msgstr "Acest eveniment este gratuit"
+
+#: ../lib/tribe-eventbrite.class.php:1362
+msgid "PayPal Payments"
+msgstr "Plăţi PayPal"
+
+#: ../lib/tribe-eventbrite.class.php:1365
+msgid "Google Checkout Payments"
+msgstr "Plăţi Google Checkout"
+
+#: ../lib/tribe-eventbrite.class.php:1368
+msgid "Pay by check"
+msgstr "Plată prin filă cec"
+
+#: ../lib/tribe-eventbrite.class.php:1371
+msgid "Pay at the door"
+msgstr "Plată la intrare"
+
+#: ../lib/tribe-eventbrite.class.php:1374
+msgid "Send an invoice"
+msgstr "Trimiteţi o factură"
+
+#: ../lib/tribe-eventbrite.class.php:1442
+msgid "Your user API Key is invalid. Please go to your profile and adjust it."
+msgstr ""
+"Cheia dvs. API este invalidă. Vă rugăm să o modificaţi din profilul dvs."
+
+#: ../lib/tribe-eventbrite.class.php:1443
+msgid ""
+"The specified user was not found or the login credentials didn’t match. "
+"Please go to your profile and verify your API Key."
+msgstr ""
+"Utilizatorul specificat nu a fost găsit, ori datele de autentificare nu se "
+"potrivesc. Vă rugăm să vă verificaţi Cheia API din profilul dvs."
+
+#: ../lib/tribe-eventbrite.class.php:1444
+#: ../lib/tribe-eventbrite.class.php:1445
+#: ../lib/tribe-eventbrite.class.php:1456
+#: ../lib/tribe-eventbrite.class.php:1457
+#: ../lib/tribe-eventbrite.class.php:1458
+#: ../lib/tribe-eventbrite.class.php:1459
+#: ../lib/tribe-eventbrite.class.php:1460
+#: ../lib/tribe-eventbrite.class.php:1461
+#: ../lib/tribe-eventbrite.class.php:1462
+#: ../lib/tribe-eventbrite.class.php:1463
+#: ../lib/tribe-eventbrite.class.php:1464
+#: ../lib/tribe-eventbrite.class.php:1470
+#: ../lib/tribe-eventbrite.class.php:1472
+#: ../lib/tribe-eventbrite.class.php:1473
+msgid ""
+"An API error occurred. Please double check the information you've entered "
+"and try again"
+msgstr ""
+"A apărut o eroare API. Vă rugăm să reverificaţi informaţiile introduse, şi "
+"apoi să reîncercaţi"
+
+#: ../lib/tribe-eventbrite.class.php:1446
+msgid "The total number of tickets exceeds the maximum allowed (50)"
+msgstr "Numărul total de bilete depăşeşte maximum permis (50)"
+
+#: ../lib/tribe-eventbrite.class.php:1447
+msgid "The ticket name is missing. Please enter a ticket name and try again."
+msgstr ""
+"Numele biletului lipseşte. Vă rugăm să introduceţi un nume pentru bilet şi "
+"apoi să reîncercaţi."
+
+#: ../lib/tribe-eventbrite.class.php:1448
+msgid ""
+"The date you selected for ticket sales to end is before the date you "
+"selected for ticket sales to start, please adjust your dates accordingly."
+msgstr ""
+"Data selectată pentru finalizarea vânzării biletelor, este înaintea datei de "
+"începere a punerii în vanzare. Vă rugăm să rectificaţi."
+
+#: ../lib/tribe-eventbrite.class.php:1449
+msgid ""
+"The date you selected for ticket sales to end is after the date you selected "
+"for the event to end, please adjust your dates accordingly."
+msgstr ""
+"Data selectată pentru finalizarea vânzării de bilete este DUPĂ data de "
+"finalizare a evenimentului. Vă rugăm să rectificaţi."
+
+#: ../lib/tribe-eventbrite.class.php:1450
+msgid "Please specify the quantity of tickets available."
+msgstr "Vă rugăm să specificaţi cantitatea de bilete disponibilă."
+
+#: ../lib/tribe-eventbrite.class.php:1451
+msgid "Please specify a valid number for quantity of tickets available."
+msgstr ""
+"Vă rugăm să specificaţi un număr valid pentru cantitatea de bilete "
+"disponibilă."
+
+#: ../lib/tribe-eventbrite.class.php:1452
+msgid ""
+"The quantity of tickets you provided is greater than event capacity. Please "
+"adjust your numbers accordingly"
+msgstr ""
+"Cantitatea de bilete pe care aţi introdus-o este MAI MARE decât capacitatea "
+"evenimentului. Vă rugăm să rectificaţi."
+
+#: ../lib/tribe-eventbrite.class.php:1453
+msgid "Please enter a valid price for the ticket"
+msgstr "Vă rugăm să introduceţi un preţ valid pentru bilet"
+
+#: ../lib/tribe-eventbrite.class.php:1454
+msgid "Please enter a valid minimum number of tickets per order"
+msgstr "Vă rugăm să introduceţi număr minim de bilete valid per comandă"
+
+#: ../lib/tribe-eventbrite.class.php:1455
+msgid "Please enter a valid maximum number of tickets per order"
+msgstr "Vă rugăm să introduceţi număr maxim de bilete valid per comandă"
+
+#: ../lib/tribe-eventbrite.class.php:1465
+msgid "Please provide a valid Google merchant ID and Key"
+msgstr "Vă rugăm să introduceţi o Cheie si un ID valid pentru Google merchant"
+
+#: ../lib/tribe-eventbrite.class.php:1466
+msgid ""
+"To use Google Checkout you need to enter a 10 or 15 digit Google Checkout "
+"Merchant ID"
+msgstr ""
+"Pentru a folosi Google Checkout trebuie să introduceţi ID-ul Google Checkout "
+"Merchant format din 10 sau 15 cifre"
+
+#: ../lib/tribe-eventbrite.class.php:1467
+msgid ""
+"To use Google Checkout you need to enter a 22 character Google Checkout "
+"Merchant Key"
+msgstr ""
+"Pentru a folosi Google Checkout trebuie să introduceţi Cheia pentru Google "
+"Checkout Merchant, formată din 22 de caractere"
+
+#: ../lib/tribe-eventbrite.class.php:1468
+msgid ""
+"Please select at least one method of payment (PayPal, Google or Alternative)"
+msgstr ""
+"Vă rugăm să selectaţi cel puţin o metodă de plată (PayPal, Google sau "
+"Alternative)"
+
+#: ../lib/tribe-eventbrite.class.php:1469
+msgid ""
+"The Paypal email address you provided is invalid. Please go to Eventbrite to "
+"adjust it."
+msgstr ""
+"Adresa de email Paypal pe care aţi introdus-o, este invalidă. Vă rugăm s-o "
+"rectificaţi din  Eventbrite."
+
+#: ../lib/tribe-eventbrite.class.php:1471
+msgid "This event has been deleted from Eventbrite."
+msgstr "Acest eveniment a fost şters din  Eventbrite."
+
+#: ../lib/tribe-eventbrite.class.php:1474
+msgid ""
+"The organizer name already exists. Please enter a different organizer name "
+"and try again. Note that your event was not registered with Eventbrite as a "
+"result."
+msgstr ""
+"Numele organizatorului există deja. Vă rugăm să introduceţi un alt nume de "
+"organizator, iar apoi să reîncercaţi. Notaţi faptul că evenimentul dvs. nu a "
+"fost înregistrat ca rezultat cu Eventbrite."
+
+#: ../lib/tribe-eventbrite.class.php:1475
+msgid ""
+"The venue name already exists. Please enter a different venue name and try "
+"again. Note that your event was not registered with Eventbrite as a result."
+msgstr ""
+"Numele locaţiei există deja. Vă rugăm să introduceţi un nume de locaţie "
+"diferit, iar apoi să reîncercaţi. Notaţi faptul că evenimentul dvs. nu a "
+"fost înregistrat ca rezultat cu Eventbrite."
+
+#: ../lib/tribe-eventbrite.class.php:1489
+msgid "The following Eventbrite error has occurred"
+msgstr "A apărut următoarea eroare Eventbrite"
+
+#: ../lib/tribe-eventbrite.class.php:1494
+msgid "The event could not be made live as a result of this error."
+msgstr "Evenimentul nu a putut fi activat ca rezultat al acestei erori."
+
+#: ../lib/tribe-eventbrite.class.php:1518
+msgid "Import: Eventbrite "
+msgstr "Import: Eventbrite "
+
+#: ../lib/tribe-eventbrite.class.php:1518
+msgid "Import: Eventbrite"
+msgstr "Import: Eventbrite "
+
+#: ../lib/tribe-eventbrite.class.php:1685
+#, php-format
+msgid ""
+"Welcome to The Events Calendar: Eventbrite Tickets! We appreciate your "
+"support and hope you enjoy the functionality this add-on has to offer. "
+"Before jumping into it, make sure you've reviewed our %sEventbrite Tickets "
+"new user primer%s so you're familiar with the basics."
+msgstr ""
+"Bun venit la calendarul de evenimente \"The Events Calendar\": Bilete "
+"Eventbrite! Vă apreciem suportul şi sperăm că vă bucuraţi de funcţiile pe "
+"care vi le oferă acest modul. Înainte de a sări direct la utilizarea "
+"acestuia, vă rugăm să vă asiguraţi că aţi consultat  %sGhidul nostru de "
+"iniţiere în Bilete Eventbrite %s, astfel încăt să vă familiarizaţi cu "
+"funcţiile principale ale acestui modul."
+
+#: ../lib/tribe-eventbrite.class.php:1686
+#, php-format
+msgid ""
+"Add your %s to your %s (Don't have one? %s). Then simply create a new event "
+"or modify an existing one and enable Eventbrite to add and sell tickets. %s"
+msgstr ""
+"Adăugaţi-vă %s la %s dvs. (Nu aveţi încă? %s). Atunci pur şi simplu creaţi "
+"un eveniment nou ori modificaţi unul existent, apoi activaţi Eventbrite "
+"pentru a adăuga şi vinde bilete. %s"
+
+#: ../lib/tribe-eventbrite.class.php:1686
+msgid "Eventbrite User API Key"
+msgstr "Cheia API - Utilizator Eventbrite"
+
+#: ../lib/tribe-eventbrite.class.php:1686
+msgid "profile"
+msgstr "profil"
+
+#: ../lib/tribe-eventbrite.class.php:1686
+msgid "Sign up now"
+msgstr "Creați un cont acum"
+
+#: ../lib/tribe-eventbrite.class.php:1697
+msgid ""
+"Eventbrite status is set to DRAFT. You can update this in the 'Eventbrite "
+"Information' section further down this page."
+msgstr ""
+"Statusul Eventbrite este configurat ca şi Ciornă/DRAFT. Îl puteţi actualiza "
+"în secţiunea 'Informaţie Eventbrite' de mai jos a acestei pagini. "
+
+#: ../lib/tribe-eventbrite.class.php:1701
+msgid ""
+"You did not create any tickets for your event.  You will not be able to "
+"publish this event on Eventbrite unless you first add a ticket at Eventbrite."
+"com."
+msgstr ""
+"Nu aţi creat nici-un bilet pentru evenimentul dvs. Nu veţi putea publica "
+"acest eveniment în Eventbrite până nu adăgaţi mai întâi un bilet pe  "
+"Eventbrite.com."
+
+#: ../lib/tribe-eventbrite.class.php:1721
+msgid "Import"
+msgstr "Import"
+
+#: ../lib/tribe-eventbrite.class.php:1730 ../views/eventbrite-options.php:8
+msgid "Eventbrite"
+msgstr "Eventbrite"
+
+#: ../lib/tribe-eventbrite.class.php:1746
+msgid "Import Events"
+msgstr "Import Eveniment"
+
+#: ../public/template-tags.php:116
+msgid "m.d.Y"
+msgstr "l.z.A"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:9
+#: ../vendor/pue-client/admin-views/license-key.view.php:13
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:291
+msgid "License Key"
+msgstr "Cheie de Licenţă"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:10
+msgid "A valid license key is required for support and updates."
+msgstr "Pentru suport şi actualizări este necesară o cheie de licenţă validă."
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:16
+msgid "Replace empty fields"
+msgstr "Înlocuiţi câmpurile goale"
+
+#: ../vendor/pue-client/admin-views/license-key.view.php:25
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:292
+msgid "A valid license key is required for support and updates"
+msgstr "Pentru suport şi actualizări este necesară o cheie de licenţă validă."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:360
+msgid "License key(s) updated."
+msgstr "Chei(a) de Licenţă actualizate(ă) "
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:400
+msgid "Sorry, key validation server is not available."
+msgstr "Ne pare rău, serverul de validare al chei nu este disponibil."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:402
+msgid "Sorry, this key is expired."
+msgstr "Ne pare rău, această cheie a expirat."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:404
+msgid "Sorry, this key is out of installs."
+msgstr "Ne pare rău, această cheie nu corespunde instalării."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:406
+msgid "Sorry, this key is not valid."
+msgstr "Ne pare rău, această cheie nu este validă."
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:409
+#, php-format
+msgid "Valid Key! Expires on %s"
+msgstr "Cheie Validă! Expiră la %s"
+
+#: ../vendor/pue-client/lib/pue_plugin_update_engine.class.php:413
+#, php-format
+msgid ""
+"Hmmm... something's wrong with this validator. Please contact <a href=\"%s"
+"\">support.</a>"
+msgstr ""
+"Hmmm... este ceva neînregulă cu acest validator. Vă rugăm să contactaţi <a "
+"href=\"%s\">echipa de suport.</a>"
+
+#: ../views/add-existing-event.php:41
+msgid ""
+"The content field must be empty in order to import the event description."
+msgstr ""
+"Conţinutul câmpului trebuie lăsat liber pentru a putea importa descrierea "
+"evenimentului."
+
+#: ../views/add-existing-event.php:114
+msgid "Import Event from Eventbrite"
+msgstr "Importaţi Eveniment din Eventbrite"
+
+#: ../views/add-existing-event.php:119
+msgid "Import an existing Eventbrite event?"
+msgstr "Importaţi un Eveniment deja existent?"
+
+#: ../views/add-existing-event.php:128
+msgid "Enter your Eventbrite Event ID here:"
+msgstr "Introduceţi aici ID-ul Evenimentului dvs. Eventbrite:"
+
+#: ../views/eventbrite-events-table.php:15
+msgid "Eventbrite Information"
+msgstr "Informaţie  Eventbrite"
+
+#: ../views/eventbrite-events-table.php:20
+msgid "Eventbrite Event ID:"
+msgstr "ID Eveniment Eventbrite:"
+
+#: ../views/eventbrite-events-table.php:28
+msgid "Eventbrite Event Status:"
+msgstr "Status Eveniment Eventbrite:"
+
+#: ../views/eventbrite-events-table.php:37
+#: ../views/eventbrite-meta-box-extension.php:419
+msgid "Draft"
+msgstr "Ciornă"
+
+#: ../views/eventbrite-events-table.php:38
+#: ../views/eventbrite-meta-box-extension.php:420
+msgid "Live"
+msgstr "Activ"
+
+#: ../views/eventbrite-events-table.php:40
+msgid "Canceled (this will cancel the event at Eventbrite)"
+msgstr "Anulat (va anula evenimentul de pe Eventbrite)"
+
+#: ../views/eventbrite-events-table.php:51
+#: ../views/eventbrite-events-table.php:63
+msgid "Note"
+msgstr "Notă"
+
+#: ../views/eventbrite-events-table.php:51
+msgid ""
+"At this time, a canceled event can only be made live again through the Quick "
+"Links in the My Events tab of your account dashboard."
+msgstr ""
+"Momentan, un eveniment anulat poate fi reactivat iar, numai prin Legăturile "
+"Rapide (Quick Links) din fila Evenimentele Mele a panoului administrativ a "
+"contului dvs."
+
+#: ../views/eventbrite-events-table.php:51
+#: ../views/eventbrite-events-table.php:54
+msgid "Manage Event"
+msgstr "Gestionare Eveniment"
+
+#: ../views/eventbrite-events-table.php:54
+msgid ""
+"This event was created without a ticket. You need to create a ticket before "
+"you can change this event's status."
+msgstr ""
+"Acest eveniment a fost creat faără vreun bilet. Trebuie să creaţi un bilet "
+"înainte de a putea modifica statusul acestui eveniment."
+
+#: ../views/eventbrite-events-table.php:64
+msgid "Cancelling the event from Eventbrite cannot be undone"
+msgstr "Anularea evenimentului de pe Eventbrite este ireversibilă"
+
+#: ../views/eventbrite-events-table.php:76
+msgid "Associated Tickets:"
+msgstr "Bilete Asociate:"
+
+#: ../views/eventbrite-events-table.php:77
+msgid "The following Eventbrite tickets are associated to this event"
+msgstr "Următoarele bilete Eventbrite sunt asociate acestui eveniment"
+
+#: ../views/eventbrite-events-table.php:82
+msgid "Ticket"
+msgstr "Bilet"
+
+#: ../views/eventbrite-events-table.php:82
+msgid "Sold"
+msgstr "Vândute"
+
+#: ../views/eventbrite-events-table.php:82
+msgid "Available"
+msgstr "Disponibile"
+
+#: ../views/eventbrite-events-table.php:82
+msgid "End Sales"
+msgstr "Finalizare Vânzări"
+
+#: ../views/eventbrite-events-table.php:100
+msgid "Edit existing tickets"
+msgstr "Editare bilete existente"
+
+#: ../views/eventbrite-events-table.php:101
+msgid "Create a new ticket"
+msgstr "Creaţi un bilet nou"
+
+#: ../views/eventbrite-events-table.php:110
+msgid "There are no tickets associated with this event!"
+msgstr "Nu există bilete asociate cu acest eveniment!"
+
+#: ../views/eventbrite-events-table.php:111
+msgid ""
+"You cannot publish this event in Eventbrite unless you first add a ticket on "
+"Eventbrite.com."
+msgstr ""
+"Nu puteţi publica acest eveniment în Eventbrite, până nu adăugaţi mai întâi "
+"un bilet pe Eventbrite.com."
+
+#: ../views/eventbrite-events-table.php:117
+msgid "Eventbrite Shortcuts:"
+msgstr "Scurtături Eventbrite:"
+
+#: ../views/eventbrite-events-table.php:123
+msgid "Manage my Event"
+msgstr "Gestionarea Evenimentului meu"
+
+#: ../views/eventbrite-events-table.php:124
+msgid "Manage Discounts"
+msgstr "Gestionare Reduceri"
+
+#: ../views/eventbrite-events-table.php:125
+msgid "Manage Attendees"
+msgstr "Gestionare Participanţi"
+
+#: ../views/eventbrite-events-table.php:126
+msgid "Email Attendees"
+msgstr "Email Participanți"
+
+#: ../views/eventbrite-events-table.php:127
+msgid "Print Badges"
+msgstr "Tipărire Insigne"
+
+#: ../views/eventbrite-events-table.php:128
+msgid "Print Check-In List"
+msgstr "Tipărire Listă Sosire"
+
+#: ../views/eventbrite-meta-box-extension.php:101
+msgid "Eventbrite only allows events to be saved that start in the future."
+msgstr ""
+"Eventbrite permite doar salvarea evenimentelor ce vor avea loc în viitor."
+
+#: ../views/eventbrite-meta-box-extension.php:116
+msgid "Please provide a ticket name for the Eventbrite ticket."
+msgstr "Vă rugăm să atribuiţi un nume de bilet pentru biletul Eventbrite."
+
+#: ../views/eventbrite-meta-box-extension.php:121
+msgid "You must set a price for the ticket "
+msgstr "Trebuie să stabiliţi un preţ pentru bilet"
+
+#: ../views/eventbrite-meta-box-extension.php:126
+msgid "Ticket quantity is not a number"
+msgstr "Cantitatea de bilete nu este un număr"
+
+#: ../views/eventbrite-meta-box-extension.php:133
+msgid "A Paypal email address must be provided."
+msgstr "Trebuie specificată o adresă de email Paypal."
+
+#: ../views/eventbrite-meta-box-extension.php:141
+msgid "A Google Merchant Id must be provided."
+msgstr "Trebuie specificat un ID pentru Google Merchant."
+
+#: ../views/eventbrite-meta-box-extension.php:147
+msgid "A Google Merchant Key must be provided."
+msgstr "Trebuie specificată o Cheie pentru Google Merchant."
+
+#: ../views/eventbrite-meta-box-extension.php:186
+msgid "Tickets"
+msgstr "Bilete"
+
+#: ../views/eventbrite-meta-box-extension.php:192
+msgid ""
+"This event has been deleted from Eventbrite. It is now unregistered from "
+"Eventbrite."
+msgstr ""
+"Acest eveniment a fost şters din Eventbrite. Acum este neînregistrat pe "
+"Eventbrite."
+
+#: ../views/eventbrite-meta-box-extension.php:200
+msgid "Register this event with eventbrite.com?"
+msgstr "Înregistraţi acest eveniment cu Eventbrite.com?"
+
+#: ../views/eventbrite-meta-box-extension.php:202
+msgid "Leave this event associated with eventbrite.com?"
+msgstr "Lăsaţi acest eveniment asociat cu eventbrite.com?"
+
+#: ../views/eventbrite-meta-box-extension.php:206
+#: ../views/eventbrite-meta-box-extension.php:220
+msgid "Yes"
+msgstr "Da"
+
+#: ../views/eventbrite-meta-box-extension.php:207
+#: ../views/eventbrite-meta-box-extension.php:221
+msgid "No"
+msgstr "Nu"
+
+#: ../views/eventbrite-meta-box-extension.php:212
+#, php-format
+msgid ""
+"This event was created by another user. Please consider contacting %s about "
+"editing these Eventbrite details."
+msgstr ""
+"Acest eveniment a fost creat de un alt utilizator. Vă rugăm să luaţi în "
+"cosiderare contactarea %s  despre editarea acestor detalii Eventbrite."
+
+#: ../views/eventbrite-meta-box-extension.php:218
+msgid "Display tickets on event page?"
+msgstr "Afişaţi biletele pe pagina evenimentului?"
+
+#: ../views/eventbrite-meta-box-extension.php:227
+msgid ""
+"Note: The Eventbrite API does not yet support recurring events, so all "
+"instances of recurring events will be associated with a single Eventbrite "
+"event."
+msgstr ""
+"Notă: Cheia API Eventbrite nu suportă încă evenimente repetitive, deci toate "
+"instanţele evenimentelor repetitive vor fi asociate cu un singur eveniment "
+"Eventbrite."
+
+#: ../views/eventbrite-meta-box-extension.php:230
+msgid ""
+"Note: Eventbrite requires you enter an organizer. If you neglect to enter an "
+"organizer, your display name will be passed as the organizer name to "
+"Eventbrite"
+msgstr ""
+"Notă: Eventbrite solicită introducerea unui organizator. Dacă neglijaţi "
+"acest aspect, numele dvs. afişat în cont va fi folosit de Eventbrite ca şi "
+"nume de organizator "
+
+#: ../views/eventbrite-meta-box-extension.php:235
+msgid "Set up your first ticket"
+msgstr "Configuraţi-vă primul dvs. bilet"
+
+#: ../views/eventbrite-meta-box-extension.php:236
+msgid ""
+"To create multiple tickets per event, submit this form, then follow the link "
+"to Eventbrite."
+msgstr ""
+"Pentru a crea bilete multiple per eveniment, trimiteţi acest formular, apoi "
+"urmaţi legătura către Eventbrite."
+
+#: ../views/eventbrite-meta-box-extension.php:241
+msgid "Name"
+msgstr "Nume"
+
+#: ../views/eventbrite-meta-box-extension.php:249
+msgid "Examples: Member, Non-member, Student, Early Bird"
+msgstr "Exemplu: Membru, Non-membru, Student, Elev"
+
+#: ../views/eventbrite-meta-box-extension.php:253
+msgid "Description"
+msgstr "Descriere"
+
+#: ../views/eventbrite-meta-box-extension.php:302
+msgid "Type"
+msgstr "Tip"
+
+#: ../views/eventbrite-meta-box-extension.php:305
+msgid " Set Price"
+msgstr "Stabiliţi Preţul"
+
+#: ../views/eventbrite-meta-box-extension.php:307
+msgid " Donation Based"
+msgstr "Pe Bază de Donaţii"
+
+#: ../views/eventbrite-meta-box-extension.php:309
+msgid " Free"
+msgstr "Gratuit"
+
+#: ../views/eventbrite-meta-box-extension.php:313
+msgid "Cost"
+msgstr "Cost"
+
+#: ../views/eventbrite-meta-box-extension.php:318
+msgid "Quantity"
+msgstr "Cantitate"
+
+#: ../views/eventbrite-meta-box-extension.php:325
+msgid "Include Fee in Price"
+msgstr "Includeţi Comision în Preţ"
+
+#: ../views/eventbrite-meta-box-extension.php:328
+msgid "Add Service Fee on top of price"
+msgstr "Adăugaţi Serviciul de Comisioane în capătul listei"
+
+#: ../views/eventbrite-meta-box-extension.php:330
+msgid " Include Service fee in price"
+msgstr "Adăugaţi Serviciul de comisioane în preţ"
+
+#: ../views/eventbrite-meta-box-extension.php:335
+msgid "Accepted Payment Methods"
+msgstr "Metode de Plată Acceptate"
+
+#: ../views/eventbrite-meta-box-extension.php:350
+msgid "Paypal"
+msgstr "Paypal"
+
+#: ../views/eventbrite-meta-box-extension.php:351
+msgid "Google Checkout"
+msgstr "Google Checkout"
+
+#: ../views/eventbrite-meta-box-extension.php:355
+msgid "Check"
+msgstr "Filă Cec"
+
+#: ../views/eventbrite-meta-box-extension.php:356
+msgid "Cash"
+msgstr "Cash"
+
+#: ../views/eventbrite-meta-box-extension.php:357
+msgid "Send an Invoice"
+msgstr "Trimiteţi o Factură"
+
+#: ../views/eventbrite-meta-box-extension.php:364
+msgid "Payment Details"
+msgstr "Detalii de Plată"
+
+#: ../views/eventbrite-meta-box-extension.php:370
+msgid "Paypal Account Email Address"
+msgstr "Adresa de Email a Contului Paypal"
+
+#: ../views/eventbrite-meta-box-extension.php:379
+msgid "Google Merchant Id"
+msgstr "ID-ul Google Merchant"
+
+#: ../views/eventbrite-meta-box-extension.php:383
+msgid "Google Merchant Key"
+msgstr "Cheia Google Merchant"
+
+#: ../views/eventbrite-meta-box-extension.php:389
+msgid "Instructions for Payment by Check"
+msgstr "Instrucţiuni de Plată prin Fila Cec"
+
+#: ../views/eventbrite-meta-box-extension.php:393
+msgid "Instructions for Payment by Cash"
+msgstr "Instrucţiuni de Plată prin Cash"
+
+#: ../views/eventbrite-meta-box-extension.php:397
+msgid "Instructions for Payment by Invoice"
+msgstr "Instrucţiuni de Plată prin Factutră"
+
+#: ../views/eventbrite-meta-box-extension.php:404
+msgid "Save this post to create the Event with Eventbrite.com"
+msgstr "Salvaţi această postare pentru a crea Evenimentul cu Eventbrite.com"
+
+#: ../views/eventbrite-meta-box-extension.php:405
+msgid ""
+"When you save this post, an event will be created for you within Eventbrite. "
+"You can choose whether this event will save as a draft or live event in "
+"Eventbrite below (regardless of whether the event here in WordPress is a "
+"draft or not). You will be able to further configure your event here after "
+"saving. For more advanced controls visit the Eventbrite administration here:"
+msgstr ""
+"La salvarea acestei postări, va fi creat pentru dvs. un eveniment prin "
+"Eventbrite. Puteţi alege dacă acest eveniment va fi salvat ca şi ciornă sau "
+"dacă va fi activat în Eventbrite (indiferent dacă evenimentul de aici din "
+"WordPress este sau nu o ciornă). Vă veţi putea configura mai departe "
+"evenimentul, aici, după salvare. Pentru mai multe controale avansate, "
+"vizitaţi panoul administrativ Eventbrite, de aici:"
+
+#: ../views/eventbrite-meta-box-extension.php:411
+msgid "Eventbrite Event Status"
+msgstr "Status Eveniment Eventbrite"
+
+#: ../views/eventbrite-meta-box-extension.php:431
+msgid "You must configure your Eventbrite API User Key in your"
+msgstr "Trebuie să vă configuraţi Cheia API de Utilizator Enetbrite în:"
+
+#: ../views/eventbrite-meta-box-extension.php:432
+msgid "profile page"
+msgstr "pagină profil"
+
+#: ../views/eventbrite-meta-box-extension.php:433
+msgid "before you can use the Eventbrite features of this plugin."
+msgstr "înainte de a folosi funcţiile Eventbrite a acestui modul."
+
+#: ../views/eventbrite-options.php:10
+#, php-format
+msgid ""
+"In order to enable Eventbrite for the The Events Calendar, please enter your "
+"Eventbrite User Key on %s"
+msgstr ""
+"Pentru a activa Eventbrite pentru calendarul de evenimente \"The Events "
+"Calendar\", vă rugăm să vă introduceţi Cheia de Utilizator Eventbrite în %s"
+
+#: ../views/eventbrite-options.php:10
+msgid "your user profile page"
+msgstr "pagina de profil utilizator"
+
+#: ../views/import-eventbrite-events.php:19
+msgid "Import Eventbrite Events"
+msgstr "Import Evenimente Eventbrite"
+
+#: ../views/import-eventbrite-events.php:21
+msgid ""
+"<p>Import the event details from any public Eventbrite event.</p><p>Your "
+"Eventbrite event id can be found by going to your event page at Eventbrite."
+"com.  Once there, examine your browser's address bar to see something like "
+"this - https://www.eventbrite.com/event/212356789.  The number after '/"
+"event/' is your event id.</p>"
+msgstr ""
+"<p>Importarea detatililor evenimentului din orice eveniment public "
+"Eventbrite.</p><p>ID-ul evenimentului dvs. Eventbrite poate fi găsit, "
+"navigând pe pagina evenimentului dvs. Eventbrite.com. O dată ajunşi acolo, "
+"examinaţi-vă bara de adresă a browser-ului dvs., căutând ceva asemănător cu "
+"- https://www.eventbrite.com/event/212356789. Numărul de după '/event/' este "
+"id-ul evenimentului dvs.</p>"
+
+#: ../views/import-eventbrite-events.php:29
+msgid "Eventbrite Event ID"
+msgstr "ID Eveniment Eventbrite"
+
+#: ../views/options.php:13
+msgid "Eventbrite Options"
+msgstr "Opţiuni Eventbrite"
+
+#: ../views/options.php:14
+msgid ""
+"These settings change the default event form. For example, if you set a "
+"default venue, this field will be automatically filled in on a new event."
+msgstr ""
+"Aceste configurări modifică formularul implicit al evenimentului. De "
+"exemplu, dacă stabiliţi o locaţie implicită, acest câmp va fi completat "
+"automat într-un nou eveniment."
+
+#: ../views/options.php:17 ../views/options.php:21
+msgid "Automatically replace empty fields with default values"
+msgstr "Înlocuirea automată a câmpurilor goale, cu valori implicite"
+
+#: ../views/options.php:25
+msgid "Enabled"
+msgstr "Activat"
+
+#: ../views/user-profile.php:12
+msgid "Eventbrite User Account"
+msgstr "Cont Utilizator Eventbrite"
+
+#: ../views/user-profile.php:15
+#, php-format
+msgid ""
+"Your API Key can be found in your %s in Eventbrite. Don't have an Eventbrite "
+"account yet? It takes less than 30 seconds to set one up. "
+msgstr ""
+"Cheia dvs. API poate fi găsită în %s dvs. din Eventbrite. Nu aveţi încă un "
+"cont Eventbrite? Durează mai puţin de 30 de secunde pentru a crea unul nou."
+
+#: ../views/user-profile.php:15
+msgid "Click here to register."
+msgstr "Apăsaţi aici pentru înregistrare."
+
+#: ../views/user-profile.php:20
+msgid "Eventbrite API User Key"
+msgstr "Cheie API Utilizator Eventbrite"
+
+#~ msgid "Please adjust the venue and try saving again."
+#~ msgstr "Vă rugăm să ajustaţi locaţia, apoi reîncercaţi salvarea ei."
+
+#~ msgid "Eventbrite requires that United States addresses include the state."
+#~ msgstr "Eventbrite vă solicită ca adresele din SUA să includă şi statul."
+
+#~ msgctxt "API key settings link"
+#~ msgid "account settings"
+#~ msgstr "configurări cont"
