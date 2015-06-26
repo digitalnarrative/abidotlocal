@@ -16,6 +16,9 @@ $statusLabels = array("publish"=>__('Published', 'social-resources'),
            $title = $myArticle->post_title;
            $content = $myArticle->post_content;             
            $status = $myArticle->post_status;
+		   ?>
+		   <input type="hidden" id="mode" value="edit"/>
+		   <?php 
            
            $resource_group_id = get_post_meta( $post_id, 'group_id', true );
            
@@ -23,11 +26,10 @@ $statusLabels = array("publish"=>__('Published', 'social-resources'),
 			$resource_attachments = get_post_meta( $post_id, '_resource_attachments', true );
            if(isset($large_image_url)){
                 $image_name = end(explode("/",$large_image_url[0]));
-           }          
-           ?>           
-            <input type="hidden" id="mode" value="edit"/>
-            <input type="hidden" id="feature-image-url" value="<?php echo $large_image_url[0];?>"/>    
-           <?php
+				?>
+				<input type="hidden" id="feature-image-url" value="<?php echo $large_image_url[0];?>"/>    
+				<?php
+		   }
        }else{          
            $state = "error";
            $message = __("You cannot perform this action", "social-resources");
@@ -44,7 +46,7 @@ $statusLabels = array("publish"=>__('Published', 'social-resources'),
 <input type="hidden" id="tag-ids"/>
 <input type="hidden" id="tag-names"/>
 <input type="hidden" id="categories-names"/>
-<input type="hidden" id="post-id" value="<?php echo $post_id;?>"/>   
+<input type="hidden" id="post-id" value="<?php echo $post_id;?>"/>
 <input type="hidden" id="post-status" value="<?php echo $status;?>"/>
 <input type="hidden" id="direct-workflow" value="<?php echo $directWorkflow;?>"/>
 
@@ -116,24 +118,8 @@ $statusLabels = array("publish"=>__('Published', 'social-resources'),
                 </select>
             </div>
         <?php endif; ?>
-        
-        <div id="post_image" class="post-image-container">
-            <div class="image-preview-container" id="image-preview-container">
-            </div>    
-            <div class="upload-controls">
-                <input id="uploader" type="submit" class="button" value="<?php _e("Upload Image", "social-resources"); ?>" />     
-                <label><?php _e("Max size allowed is 2 MB", "social-resources"); ?></label>
-            </div>    
-            <div class="uploading" id="uploading">
-               <img src ="<?php echo SA_BASE_URL;?>/assets/images/load.gif"/>
-               <label><?php _e("Uploading your image. Please wait.", "social-resources"); ?></label>
-            </div>  
-            
-            <div class="edit-controls">
-                <input type="submit" class="button" value="<?php _e("Delete", "social-resources"); ?>" onclick="cancelImage()" /> 
-            </div>    
-        </div>
 		
+		<br style="clear: both;">
 		<label><?php _e("Resource Files", "social-resources"); ?></label>
         <div class='post-image-container upload-controls-container' id="frm_gtype_completion">
         	<?php wp_nonce_field( 'gtype_completion', 'nonce_gtype_completion' );?>
@@ -170,7 +156,7 @@ $statusLabels = array("publish"=>__('Published', 'social-resources'),
         <div class="buttons-container" id="create-controls">
             <input type="checkbox" id="publish-draft" /><label for="publish-draft"><span></span><?php _e("Save as draft", "TEXTDOMAIN"); ?></label>
             
-            <input type="submit" class="button save" value="<?php _e("Save", "social-resources"); ?>" onclick="savePost(); return false;" />
+            <button type="submit" class="button save" onclick="savePost(); return false;" ><?php _e("Save", "social-resources"); ?> <i class="fa fa-spin fa-spinner" style="display: none"></i></button>
             <input type="submit" class="button cancel" value="<?php _e("Cancel", "social-resources"); ?>" onclick="window.open('<?php echo $bp->loggedin_user->domain.'resources';?>', '_self')" />
         </div>  
     </div>    
@@ -179,30 +165,3 @@ $statusLabels = array("publish"=>__('Published', 'social-resources'),
         <span><?php echo $message; ?></span>
     </div>    
 <?php endif;?>
-
-<script>
-jQuery(function(){                    
-    new AjaxUpload('uploader', {
-        action: MyAjax.baseUrl+'/upload-handler.php',                
-                onComplete: function(file, response){                                       
-                    response = jQuery.parseJSON(response);
-                    jQuery("#uploading").hide();
-                    if(response.status == "ok"){                                                           
-                        jQuery("#image-name").val(response.value);
-                        jQuery("#image-preview-container").html(getImageObject(MyAjax.tmpImageUrl+ response.value));
-                        jQuery(".edit-controls").show();                                                    
-                    }else{
-                        jQuery(".upload-controls").show();   
-                        showError(response.value);                                
-                    }
-                },
-                onSubmit: function(file, extension){
-                   jQuery('#error-box').hide();
-                   jQuery(".upload-controls").hide();
-                   jQuery("#uploading").show();                              
-                }   
-            });         
-        
-        });             
-
-</script>

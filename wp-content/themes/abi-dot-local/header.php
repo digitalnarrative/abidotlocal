@@ -178,6 +178,7 @@
                                                             </div>
                                                         </li>
                                                 <?php else: ?>
+                                                    
                                                     <li class="menupop">
                                                         <a class="ab-item" href="<?php echo admin_url(); ?>"><?php _e('Dashboard','boss'); ?></a>
                                                         <div class="ab-sub-wrapper">
@@ -201,6 +202,12 @@
                                        
                                         <!-- Adminbar -->
                                         <div id="adminbar-links" class="bp_components">
+                                            <?php if( current_user_can('editor') || current_user_can('administrator') ) {  ?> 
+
+                                                <li class="styleright">
+                                                    <?php edit_post_link('Edit Page'); ?> 
+                                                </li>
+                                            <?php } ?>
                                         <?php 
                                             buddyboss_adminbar_myaccount();
                                         ?>

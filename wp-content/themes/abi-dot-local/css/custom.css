@@ -104,6 +104,7 @@ button, input[type="submit"], input[type="button"], input[type="reset"], article
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     border-radius: 0;
+    display: inline-block;
 }
 
 /*--------------------------------------------------------------
@@ -200,7 +201,14 @@ nav.main-navigation {
 .main-navigation li a:hover {
     background-color: #1e86b3;
 }
-
+#adminbar-links li.styleright {
+  display: block;
+  padding: 5px 21px;
+  text-transform: uppercase;
+}
+#adminbar-links li.styleright a#vc-load-inline-editor {
+    display: none;
+}
 .nav-inner .searchform {
     position: relative;
     float: right;
@@ -966,7 +974,41 @@ ul.activity-filter {
 }
 #buddypress div#item-nav .item-list-tabs ul {
     margin-bottom: 20px;
+    width: 100%;
 }
+#buddypress #members-group-list ul#member-list li {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  vertical-align: top;
+}
+#buddypress #members-group-list ul#member-list li img {
+  width: 50px;
+  display: inline-block;
+  float: none;
+}
+#buddypress #members-group-list ul.item-list li #item-content {
+  width: 100%;
+  float: none;
+  text-align: center;
+}
+#buddypress #members-group-list ul#member-list li #item-content h5 {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#buddypress #members-group-list ul#member-list li .action {
+  width: 100%;
+}
+body.single-item.groups #members-group-list ul#member-list li .action a {
+  display: inline-block;
+  width: auto;
+}
+body.single-item.groups #members-group-list ul#member-list li #item-content {
+  min-height: 0;
+}
+#buddypress ul#member-list li #item-content
 #buddypress div#item-nav .item-list-tabs ul li.selected a,
 #buddypress div#item-nav .item-list-tabs ul li.current a,
 #buddypress div#item-nav .item-list-tabs ul li a,
@@ -1474,7 +1516,7 @@ div#wpadminbar li a:hover {
 
 div#wpadminbar .dashboard .ab-sub-wrapper li a,
 #wp-admin-bar-my-account-buddypress .menupop .ab-sub-wrapper .ab-submenu > li a {
-    margin-left: 43px;
+/*    margin-left: 43px;*/
 }
 
 .dashboard .menupop .ab-sub-wrapper .ab-submenu > li,
@@ -1607,6 +1649,9 @@ body:not(.group-members) #buddypress div#subnav.item-list-tabs ul, body:not(.gro
     }
     .group-home .tribe-mini-calendar-wrapper {
       max-width: 340px;
+    }
+    #buddypress div#item-nav .item-list-tabs ul {
+      width: 100%;
     }
 }
 
@@ -1764,6 +1809,7 @@ body:not(.group-members) #buddypress div#subnav.item-list-tabs ul, body:not(.gro
 	width: 100%;
 	text-align: center;
 }
+
 .bp-members-title span {
 	font-family: 'FreightSansProBook';
 	font-size: 20px;
@@ -1925,6 +1971,100 @@ li h4, #buddypress ul.item-list li span.activity {
 }
 /*===== End Member Index Styles =====*/
 
+/*===== Group Index Styles =====*/
+.directory.groups .home_slider {
+    margin-bottom: 40px;
+}
+.directory.groups article{
+   float: left;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.directory.groups .bp-members-title h1 {
+    margin-bottom: 10px;
+}
+.directory.groups .bp-members-title p {
+  font-size: 18px;
+  margin-bottom: 45px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.directory.groups #groups-list li {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    border-top: 1px solid #808080;
+    margin-bottom: 50px;
+}
+.directory.groups #groups-list li.even {
+    margin-right: 0;
+}
+.directory.groups #groups-list li .item {
+  margin-top: 10px;
+}
+.directory.groups .item-avatar {
+  width: 140px;
+  float: left;
+  margin-right: 40px;
+}
+.directory.groups .item-title a,
+.directory.groups .item-meta {
+    color:#686b6d;
+    font-weight: 600;
+}
+.directory.groups .item-meta {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 300;
+    margin: 10px 0 5px;
+}
+.directory.groups #groups-list .meta {
+    margin-top: 5px;
+}
+
+.directory.groups #groups-list img.avatar {
+  width: 140px;
+  height: auto;
+}
+span.count-circle {
+  padding: 4px 7px;
+  color: white;
+  background-color: #888b8d;
+  border-radius: 50%;
+  line-height: 1;
+  display: inline-block;
+}
+.generic-button a,
+a.button {
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: #62b5e5;
+  border:1px solid #62b5e5;
+  color: #fff;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+.generic-button a:hover {
+    background-color: #fff;
+    color: #62b5e5;
+}
+.generic-button a.leave-group {
+    color: #b1b3b3;
+    background-color: #fff;
+    border:1px solid #b1b3b3;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
+}
+.generic-button a.leave-group:hover {
+    color: #fff;
+    background-color: #b1b3b3;
+    border:1px solid #b1b3b3;
+}
 .groups #buddypress div#item-body {
 	min-height: 1200px;
 }

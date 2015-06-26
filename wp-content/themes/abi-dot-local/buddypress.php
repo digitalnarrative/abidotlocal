@@ -17,6 +17,7 @@ get_header(); ?>
 		( is_active_sidebar(bp_get_current_group_slug()) && bp_is_group() ) ||
 		( is_active_sidebar('activity') && bp_is_current_component( 'activity' ) && !bp_is_user() ) ||
 		( is_active_sidebar('blogs') && is_multisite() && bp_is_current_component( 'blogs' ) && !bp_is_user() ) ||
+		( bp_is_current_component( 'groups' ) && bp_is_single_item() ) ||		
 		( is_active_sidebar('forums') && bp_is_current_component( 'forums' ) && !bp_is_user() )
 	): ?>
 		<div class="page-right-sidebar">

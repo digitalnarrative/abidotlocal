@@ -51,11 +51,16 @@ function buddyboss_child_scripts_styles()
   wp_enqueue_style( 'buddyboss-child-custom', get_stylesheet_directory_uri().'/css/custom.css' );
   wp_enqueue_style( 'custom-fonts', get_stylesheet_directory_uri().'/css/fonts.css' );
   wp_enqueue_script( 'buddyboss-child-js', get_stylesheet_directory_uri(). '/js/custom-scripts.js', array( 'jquery' ),'1.0',true );
-	wp_dequeue_script( 'buddyboss-main' ); 
+
+  wp_dequeue_script( 'buddyboss-main' ); 
   wp_enqueue_script( 'buddyboss-js', get_stylesheet_directory_uri(). '/js/buddyboss.js', array( 'jquery' ),'1.0',true );
 }
 add_action( 'wp_enqueue_scripts', 'buddyboss_child_scripts_styles', 9999 );
 
+function my_login_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/css/login.css' );
+}
+add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
 
 /****************************** CUSTOM FUNCTIONS ******************************/
 

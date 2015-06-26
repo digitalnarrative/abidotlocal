@@ -323,6 +323,7 @@ body:not(.tablet) .header-account-login:hover .pop {
 	border:1px solid #b1b3b3;
 	box-shadow: none;
 }
+#adminbar-links li.styleright a:before,
 div#wpadminbar li a:before,
 #wpadminbar span.logout:before,
 .header-account-login .pop .logout a:before,
@@ -386,6 +387,10 @@ div#wpadminbar .dashboard .ab-sub-wrapper li a:before {
 #wpadminbar span.logout:before{
   content: '\f08b';
 }
+#adminbar-links li.styleright a:before{
+  content: '\f040';    
+}
+
 
 #wp-admin-bar-my-account-photos,
 #wp-admin-bar-my-account-bp_docs,

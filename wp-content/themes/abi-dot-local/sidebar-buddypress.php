@@ -35,7 +35,7 @@
 				</div><!-- #secondary -->
 				
 		<!-- if there are widgets in the City: Single sidebar -->		
-		<?php elseif ( is_active_sidebar(  bp_get_current_group_slug()) && bp_is_group() ) : ?>
+		<?php elseif ( bp_is_group() ) : ?>
 		
 				<div id="secondary" class="widget-area" role="complementary">
 					<aside id="text-10" class="widget widget_text">			
