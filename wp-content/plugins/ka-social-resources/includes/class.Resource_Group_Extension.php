@@ -42,7 +42,27 @@ class Resource_Group_Extension extends BP_Group_Extension {
             $add_resouce_page = add_query_arg( 'gid', bp_get_group_id(), $add_resouce_page );
             ?>
             
-            <h2><?php echo $this->name;?><a class='button btn-add-resource' href='<?php echo esc_url( $add_resouce_page );?>'><?php _e( 'Add Resource', 'TEXTDOMAIN' );?></a></h2>
+            <h2><?php echo $this->name;?>
+				<?php 
+				global $groups_template;
+				$group =& $groups_template->group;
+
+				$can_add_resource_to_group = true;
+				if ( !is_user_logged_in() || bp_group_is_user_banned( $group ) )
+					$can_add_resource_to_group = false;
+
+				// Group creation was not completed or status is unknown
+				if ( !$group->status )
+					$can_add_resource_to_group = false;
+
+				// Already a member
+				if ( $can_add_resource_to_group && isset( $group->is_member ) && $group->is_member ) :
+					?>
+					<a class='button btn-add-resource' href='<?php echo esc_url( $add_resouce_page );?>'><?php _e( 'Add Resource', 'TEXTDOMAIN' );?></a>
+					<?php 
+				endif;
+				?>
+			</h2>
             <div class='content'>
                 <?php 
                 $group_url = trailingslashit( bp_get_group_permalink() ) . 'resources';

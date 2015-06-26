@@ -54,6 +54,8 @@ jQuery(document).ready(function($) {
     });
 });
 
+DREAMITIK_CORE.uploading = false;
+
 DREAMITIK_CORE.gtype_completion = {};
 (function(context, window, $) {
 	var config = {
@@ -171,6 +173,8 @@ DREAMITIK_CORE.gtype_completion = {};
 					}
 					
 					//$.fancybox.update();
+					DREAMITIK_CORE.uploading = true;
+					$('#create-controls .button.save').attr('disabled','disabled').find('.fa').show();
 					up.start();
 				},
 
@@ -202,6 +206,9 @@ DREAMITIK_CORE.gtype_completion = {};
 					//PUSH file.id into hidden field( name="attch_ids" ) value
 					//loop through all the files in pics_uploaded variable and add their ids to hidden field
 					context.updateHiddenField();
+					
+					DREAMITIK_CORE.uploading = false;
+					$('#create-controls .button.save').removeAttr('disabled').find('.fa').hide();
 				},
 
 				Error: function(up, args) {
@@ -275,6 +282,10 @@ DREAMITIK_CORE.gtype_completion = {};
 
 
 function savePost(){
+	if( DREAMITIK_CORE.uploading ){
+		alert('Please wait for the upload to finish.');
+		return;
+	}
     var swith_back_to_tmce = false;
 	if( ! jQuery('#post_content').is(':visible') ) {
 		jQuery('#post_content-html').trigger('click');
@@ -283,7 +294,7 @@ function savePost(){
 	
     jQuery('#error-box').hide();
         
-    if(validateFields()){ 	
+    if(validateFields()){
         jQuery('#post-maker-container :input, #post-maker-container textarea').attr('disabled', true);                         
         jQuery('#save-waiting').show();
         

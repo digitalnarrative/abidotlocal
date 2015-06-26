@@ -1,5 +1,4 @@
 <?php 
-
 add_action('wp_ajax_nopriv_create_post', 'create_post' );
 add_action('wp_ajax_create_post', 'create_post' );  
 function create_post(){

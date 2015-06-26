@@ -635,11 +635,12 @@ a.fork {
 #frm_gtype_completion{ min-height: 100px }
 #gtype-media-bulk-uploader{ padding: 10px; }
 #gtype-media-bulk-uploader-reception{ border: 2px dashed #ccc; padding: 20px; text-align: center;}
-, #gtype-media-bulk-uploader-reception p{ text-align: center; }
+#gtype-media-bulk-uploader-reception p{ text-align: center; }
 #gtype-media-bulk-uploader-reception .buddyboss-media-drop-separator{ margin: 20px 0 20px 0 }
 #gtype-file-browser-button{ text-decoratoin: underline; cursor: pointer; }
 
 #gtype-media-bulk-uploader-uploaded .file { border: 1px solid #eee; background: #f9f9f9; padding: 5px; margin-bottom: 10px }
+#gtype-media-bulk-uploader-uploaded .file .buddyboss-media-progress-bar{ opacity: 1 }
 #gtype-media-bulk-uploader-uploaded .file .docname{ margin-right: 10px }
 #gtype-media-bulk-uploader-uploaded .file .delete{border: 1px solid;
 border-color: rgb(232, 190, 190);
